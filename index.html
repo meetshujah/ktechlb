@@ -159,10 +159,8 @@
   <section class="parralaxSection" data-aos="fade-up"></section>
   <section class="productCarousel mt-5 mb-5 pt-5" data-aos="fade-up">
     <div class="container-fluid">
-
-      <div id="owl-carousel" class="owl-carousel">
-
-        <div class="item">
+      <div class="row">
+        <div class="col col-xs-12">
           <div class="item_s4">
             <div class="sec3_bot ">
               <div class="sec3_box aos-init aos-animate" data-aos="fade-up-right">
@@ -174,7 +172,7 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="col col-xs-12">
           <div class="item_s4">
             <div class="sec3_bot ">
               <div class="sec3_box aos-init aos-animate" data-aos="fade-up-right">
@@ -186,7 +184,7 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="col col-xs-12">
           <div class="item_s4">
             <div class="sec3_bot ">
               <div class="sec3_box aos-init aos-animate" data-aos="fade-up-left">
@@ -198,7 +196,7 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="col col-xs-12">
           <div class="item_s4">
             <div class="sec3_bot ">
               <div class="sec3_box aos-init aos-animate" data-aos="fade-up-left">
@@ -210,7 +208,7 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="col col-xs-12">
           <div class="item_s4">
             <div class="sec3_bot ">
               <div class="sec3_box aos-init aos-animate" data-aos="fade-up-left">
@@ -222,21 +220,7 @@
             </div>
           </div>
         </div>
-        <div class="item">
-          <div class="item_s4">
-            <div class="sec3_bot ">
-              <div class="sec3_box aos-init aos-animate" data-aos="fade-up-left">
-                <img src="dist/assets/img/4.png" alt="">
-                <h3 class="head_underline_small">Mobile</h3>
-                <span class="underline_head"></span>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
       </div>
-
     </div>
   </section>
 
@@ -268,7 +252,30 @@
             <div class="product-logo"><img src="dist/assets/img/logo4.png" alt=""></div>
           </div>
         </div>
-
+        <div class="item">
+          <div class="item_s4"> <img src="dist/assets/img/p11.jpg" alt="">
+            <div class="product-title">Lighter</div>
+            <div class="product-logo"><img src="dist/assets/img/logo1.png" alt=""></div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item_s4"> <img src="dist/assets/img/p12.jpg" alt="">
+            <div class="product-title">Camera</div>
+            <div class="product-logo"><img src="dist/assets/img/logo2.png" alt=""></div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item_s4"> <img src="dist/assets/img/p13.jpg" alt="">
+            <div class="product-title">Lens</div>
+            <div class="product-logo"><img src="dist/assets/img/logo3.png" alt=""></div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item_s4"> <img src="dist/assets/img/p14.jpg" alt="">
+            <div class="product-title">Lenses </div>
+            <div class="product-logo"><img src="dist/assets/img/logo4.png" alt=""></div>
+          </div>
+        </div>
       </div>
 
 
@@ -376,10 +383,10 @@
         </div>
     </section>
   </section>
-  <section class="sectionFour mt-5 mb-5">
+  <section class="sectionFour mb-5">
     <div class="container-fluid">
       <div class="row">
-        <div class="parallax focus1"></div>
+        <div class="parallaxOne focus"></div>
       </div>
     </div>
   </section>
@@ -429,19 +436,33 @@
     </section>
   </section>
 
-  <section class="videoSection" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-    <div class="container-fluid">
-      <div class="row position-relative">
-        <div class="video-preview-overlay"></div>
-        <video id="my-player" class="video-js" controls="controls" data-setup='{}' loop="true" autoplay="autoplay"
-          muted>
-          <source type="video/mp4" src="dist/assets/img/bannervideo.mp4">
-          </source>
-          <source type="video/ogg" src="dist/assets/img/bannervideo.mp4">
-          </source>
-
+  <section data-layer="main-video" class="bg-white">
+    <div id="shopify-section-main-video" class="shopify-section">
+      <div class="video-player bg-black" data-section-id="main-video" data-section-type="banner">
+        <video class="video-js" autoplay="" loop="" playsinline="" id="playVideo" controls>
+          <source
+            src="https://cdn.shopify.com/videos/c/vp/9986001d050f47c0861a1885351a32bb/9986001d050f47c0861a1885351a32bb.HD-1080p-7.2Mbps.mp4"
+            type="video/mp4" id="main-video">
         </video>
+        <div class="video-preview-wrapper">
+          <!-- <img class="video-preview-overlay" src="//cdn.shopify.com/s/files/1/0065/3606/9223/t/5/assets/main-video-overlay.png?2453" alt=""> -->
+          <div class="video-preview-overlay"></div>
+          <video class="video-preview w-full" autoplay="" loop="" playsinline="" muted="">
+            <source src="https://cdn.shopify.com/s/files/1/0065/3606/9223/files/main-video-preview.mp4?v=1604838067"
+              type="video/mp4">
+          </video>
+        </div>
+        <button class="play-toggle">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24 4.5C13.2478 4.5 4.5 13.2478 4.5 24C4.5 34.7522 13.2478 43.5 24 43.5C34.7522 43.5 43.5 34.7522 43.5 24C43.5 13.2478 34.7522 4.5 24 4.5ZM18.75 32.25V15.75L32.25 24L18.75 32.25Z"
+              fill="white"></path>
+          </svg>
+        </button>
       </div>
+
+
+
     </div>
   </section>
   <section class="sectionSeven " data-aos="fade-up">
@@ -512,44 +533,59 @@
       </div>
     </section>
   </section>
-  <section class="sectionFive aos-init aos-animate" data-aos="fade-up">
+  <section class="sectionFour">
     <div class="container-fluid">
       <div class="row">
-        <img src="./dist/assets/img/bg.png" class="img-fluid w-100">
+        <div class="parallaxTwo focus"></div>
       </div>
     </div>
   </section>
   <!-- Site footer -->
   <footer class="site-footer position-relative">
     <div class="container-fluid mb-5">
-      <div id="contacts-webchat-footer" class="mb-5 contacts-webchat onready desktop">
-        <div class="contacts-webchat-wrapper">
+      <div id="contacts-webchat-footer" class="mb-5 contacts-webchat onready desktop row">
+        <div class="contacts-webchat-wrapper w-100">
           <div id="contacts-webchat-tabs">
             <div class="toggle chat">
-              <div class="trigger">
+              <div class="trigger" data-toggle="collapse" href="#webchat" role="button" aria-expanded="true"
+                aria-controls="webchat">
                 <a href="javascript:void(0)">
                   <div class="icon-wrapper">
                     <span class="fa  fa-comment-alt pr-2"></span>
                     <span class="label">Chat</span>
                   </div>
-                  <span class="icon-Arrowdown toggle-accordion"></span>
+                  <span class="fa fa-angle-down  toggle-accordion"></span>
                 </a>
               </div>
-              <div id="webchat" class="contact-webchat-content">
-                webchat
+              <div id="webchat" class="contact-webchat-content collapse">
+                <div class="step-first webchat-list chat-show">
+                  <h4 class="visible">How could we help you?</h4>
+                  <img class="chat-loader"
+                    src="https://www.technogym.com/skin/frontend/technogym/default/images/loading.svg">
+                  <button
+                    class="button-69528058-32de-403d-8d3e-1c407ed545c8 button-0dcb9003-b132-4baf-b4d5-d66e78d724c1 button-show"
+                    data-chat="UAE_INSIDESALES_CHAT" onclick="window.openFooterChatPanel(this);">Products </button>
+                  <button
+                    class="button-3014949a-7703-4e88-bad3-38aba32d424c button-3384d67a-14aa-43a7-956b-6ab8cb56d712 button-show"
+                    data-chat="UAE_CUSTOMERSERVICE_CHAT" onclick="window.openFooterChatPanel(this);">Orders </button>
+                  <button
+                    class="button-9edbdbf8-6a97-4ef2-b3cb-9551e39a09dc button-b9c5847e-c506-4a52-975f-03dc7be58040 button-show"
+                    data-chat="UAE_AFTERSALES_CHAT" onclick="window.openFooterChatPanel(this);">Assistance </button>
+                </div>
               </div>
             </div>
             <div class="toggle call">
-              <div class="trigger">
+              <div class="trigger" data-toggle="collapse" href="#call" role="button" aria-expanded="false"
+                aria-controls="call">
                 <a href="javascript:void(0)">
                   <div class="icon-wrapper">
                     <span class="fa fa-mobile pr-2"></span>
                     <span class="label">Call us</span>
                   </div>
-                  <span class="icon-Arrowdown toggle-accordion"></span>
+                  <span class="fa fa-angle-down toggle-accordion"></span>
                 </a>
               </div>
-              <div id="call" class="contact-webchat-content">
+              <div id="call" class="contact-webchat-content collapse">
                 <button tel="04 562 8900"
                   onclick="(function(){ let phone = jQuery(this).attr('tel'); let action = 'tel:' + phone; location.href = action; TG.trackInboundCall(phone, 'Footer'); }).call(this)">
                   04 562 8900 </button>
@@ -668,7 +704,8 @@
       // variable 
       var VIDEO_PLAYING_STATE = {
         "PLAYING": "PLAYING",
-        "PAUSE": "PAUSE"
+        "PAUSE": true
+        , controls: true
       }
       var videoPlayStatus = VIDEO_PLAYING_STATE.PAUSE
       var timeout = null
@@ -765,13 +802,13 @@
       });
 
       $('#owl-carousel2').owlCarousel({
-        loop: true,
-        autoplay: true,
+        loop: false,
+        autoplay: false,
         autoplayTimeout: 5000,
         autoplayHoverPause: false,
         margin: 20,
         items: 4,
-        nav: false,
+        nav: true,
         dots: false,
         center: false,
 
@@ -794,6 +831,17 @@
         } else {
           $('.scrollTo').fadeOut();
         }
+      });
+
+      var vid = document.getElementById("playVideo");
+
+      $('.play-toggle').on('click', function () {
+        vid.play();
+        $('.video-preview-wrapper,.play-toggle').hide();
+      });
+      vid.addEventListener('pause', (event) => {
+        vid.pause();
+        $('.video-preview-wrapper,.play-toggle').show();
       });
     });
   </script>
