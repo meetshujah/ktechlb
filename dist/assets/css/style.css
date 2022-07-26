@@ -56,9 +56,9 @@ h3.head_underline_small {
 }
 
 .spacing {
-    padding: 110px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
-
 
 /* utilties */
 nav .dropdown:hover>.dropdown-menu {
@@ -124,12 +124,12 @@ nav .dropdown>.dropdown-toggle:active {
 }
 
 .bannerSection .book {
-    right: 2%;
+    right: 13%;
     content: url(../img/book2.png);
     position: absolute;
     z-index: 3;
-    bottom: -6%;
-    width: 200px;
+    bottom: -2%;
+    width: 277px;
     transform: translate(-2%, -6%);
 }
 
@@ -543,15 +543,25 @@ img.box-image {
     padding: 5px;
 }
 
-#owl-carousel2 .item {
-    transition: all 1000ms ease;
-    transform-style: preserve-3d;
-    transform: translate3d(0, 10px, 0) scale(0.9);
-    z-index: 1;
+#owl-carousel2 .item:hover .product-detail {
+    opacity: 1;
 }
 
-#owl-carousel2 .item:hover {
-    transform: scale(1.1)
+.product-detail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    text-align: center;
+    top: 0px;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /*owl carouel arrows */
@@ -1016,8 +1026,8 @@ div[id*='contacts-webchat-'] .text {
 
 .scrollTo {
     position: fixed;
-    bottom: 172px;
-    right: 55px;
+    bottom: 139px;
+    right: 19px;
     z-index: 999;
     font-size: 30px;
     background: #fff;
@@ -1059,7 +1069,6 @@ div[id*='contacts-webchat-'] .text {
 .productSection .item_s4 img {
     width: 100%;
     height: 300px;
-    transition: all 0.5s ease;
 }
 
 /* product section */
@@ -1151,6 +1160,10 @@ div[id*='contacts-webchat-'] .text {
     .bannerSection,
     .swiper-wrapper {
         height: 200px;
+    }
+
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
     }
 
     .bannerSection .book {
@@ -1268,5 +1281,16 @@ div[id*='contacts-webchat-'] .text {
     .site-footer .footerDetail {
         margin: 0;
         flex-direction: column !important;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl {
+        max-width: 1400px;
     }
 }
