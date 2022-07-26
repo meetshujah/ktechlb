@@ -812,6 +812,10 @@ div[id*='contacts-webchat-'] .text {
     -webkit-align-items: center;
 }
 
+.swiper-slide {
+    margin-bottom: 30px;
+}
+
 .scrollTo {
     position: fixed;
     bottom: 172px;
@@ -994,8 +998,15 @@ div[id*='contacts-webchat-'] .text {
 
 @media screen and (min-width: 1366px) and (max-width: 1500px) {
     .bannerSection .book {
-        right: -2%;
-        bottom: -24%;
+        width: 130px;
+    }
+
+    .bannerSection .book {
+        bottom: 0px;
+    }
+
+    .swiper-wrapper {
+        height: 700px;
     }
 
     .swiper-button-next,
