@@ -948,7 +948,8 @@ div[id*='contacts-webchat-'] .text {
     }
 
     .bannerSection .book {
-        display: none;
+        right: -11%;
+        bottom: -24%;
     }
 
     .navbar-brand img {
