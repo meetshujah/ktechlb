@@ -11,7 +11,6 @@
   <title>Bootstrap Stater</title>
 
   <!-- Icons for this template -->
-  <link href="assets/fonts/font-awesome/css/all.min.css" rel="stylesheet" type="text/css" />
   <link href="dist/assets/css/owl.theme.css" rel="stylesheet" />
   <link href="dist/assets/css/owl.carousel.min.css" rel="stylesheet" />
   <link href="dist/assets/css/video-js.min.css" rel="stylesheet" />
@@ -719,18 +718,7 @@
 
         clearTimeout(timeout)
 
-        switch (currentSlideType) {
-          case 'img':
-            runNext()
-            break;
-          case 'vdo':
-            player.currentTime(0)
-            player.play()
-            videoPlayStatus = VIDEO_PLAYING_STATE.PLAYING
-            break;
-          default:
-            throw new Error('invalid slide type');
-        }
+
       })
 
       // global function
@@ -742,13 +730,7 @@
         swiper.slideNext();
       }
 
-      function runNext() {
-        timeout = setTimeout(function () {
-          next()
-        }, waiting)
-      }
 
-      runNext()
       AOS.init();
       $('#owl-carousel').owlCarousel({
         loop: true,
