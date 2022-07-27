@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
 /* utilties */
 
 .mt-60 {
@@ -15,10 +19,10 @@ html {
 }
 
 .main_btn {
-    padding: 14px 25px;
+    padding: 8px 46px;
     border: none;
     color: white;
-    border-radius: 12px;
+    border-radius: 3px;
     font-size: 17px;
     font-weight: 400;
     -webkit-transition: .3s ease;
@@ -37,10 +41,10 @@ html {
     font-size: 30px;
     font-weight: 600;
     font-family: 'Nunito', sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     position: relative;
     padding-bottom: 30px;
-    color: #022047;
+    color: #7d7e81;
 }
 
 h3.head_underline_small {
@@ -128,7 +132,7 @@ nav .dropdown>.dropdown-toggle:active {
     content: url(../img/book2.png);
     position: absolute;
     z-index: 3;
-    bottom: -2%;
+    bottom: -100px;
     width: 277px;
     transform: translate(-2%, -6%);
 }
@@ -188,14 +192,22 @@ nav .dropdown>.dropdown-toggle:active {
     left: 30px;
 }
 
-.bannerSection .swiper-container {}
+.swiper-slide {
+    height: 512px;
+    align-self: stretch;
+}
+
+.swiper-slide img {
+    height: 512px;
+    width: 100%;
+}
 
 /* banner section */
 /* section Four parallax */
 .parallaxOne {
     background: url(../img/M1.jpg);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -1020,9 +1032,6 @@ div[id*='contacts-webchat-'] .text {
     -webkit-align-items: center;
 }
 
-.swiper-slide {
-    margin-bottom: 30px;
-}
 
 .scrollTo {
     position: fixed;
@@ -1066,12 +1075,24 @@ div[id*='contacts-webchat-'] .text {
     margin-right: 0 !important;
 }
 
-.productSection .item_s4 img {
+.productSection .item_s4 {
     width: 100%;
-    height: 300px;
+    height: 455px;
+    align-self: stretch;
+}
+
+.productSection .item_s4 img {
+    height: 100%;
+    object-fit: cover;
 }
 
 /* product section */
+
+/*about */
+.cover-container {
+    background-image: url('../img/bg2.jpg') !important;
+    padding: 150px 30px !important
+}
 
 @media (min-width: 1025px) {
     #contacts-webchat-footer .contact-webchat-content {
@@ -1220,12 +1241,10 @@ div[id*='contacts-webchat-'] .text {
     }
 
     .bannerSection .book {
-        bottom: 0px;
+        bottom: -40px;
     }
 
-    .swiper-wrapper {
-        height: 700px;
-    }
+
 
     .swiper-button-next,
     .swiper-button-prev {
