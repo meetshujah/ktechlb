@@ -1458,6 +1458,10 @@ div[id*='contacts-webchat-'] .text {
         position: absolute;
         top: 34%;
     }
+
+    .site-footer a {
+        font-size: 0.6rem;
+    }
 }
 
 @media screen and (min-width: 1599px) and (max-width: 1900px) {
