@@ -130,7 +130,7 @@ ul.navbar-nav li a {
     font-family: "Microsoft YaHei";
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: 0.929rem;
+    font-size: 0.8rem;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -824,7 +824,7 @@ nav .dropdown-menu {
 
 ul.dropdown-menu li a {
     font-family: "Microsoft YaHei" !important;
-    font-size: 0.929rem;
+    font-size: 0.8rem;
     color: #fff;
     text-transform: capitalize !important;
 }
