@@ -194,7 +194,7 @@ ul.navbar-nav li a {
 /* banner section */
 .bannerSection {
     position: relative;
-    /* top: 149px; */
+    margin-top: 85px;
 }
 
 .bannerSection .book {
