@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Ferdinand Tugano" />
+    <link rel="icon" href="favicon.ico" />
+
+    <title>Bootstrap Stater</title>
+
+    <!-- Icons for this template -->
+    <link href="http://fonts.cdnfonts.com/css/microsoft-yahei" rel="stylesheet">
+    <link href="dist/assets/css/owl.theme.css" rel="stylesheet" />
+    <link href="dist/assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="dist/assets/css/video-js.min.css" rel="stylesheet" />
+    <link href="dist/assets/css/swiper.min.css" rel="stylesheet" />
+    <link href="dist/assets/css/aos.css" rel="stylesheet" />
+
+
+    <!-- Stylesheet -->
+    <!-- build:css -->
+    <link href="assets/css/app.css" rel="stylesheet" />
+    <link href="dist/assets/css/style.css" rel="stylesheet" />
+    <!-- endbuild -->
+    <style>
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        :root {
+            --news-heading-color: rgb(51 51 51 / 57%);
+            /* middle banner css */
+            --text-black: #000;
+            --news-blue: #EBEFF0;
+            /* middle banner css */
+        }
+
+        /* middle banner css */
+        .news-padding {
+            padding: 100px;
+            background: var(--news-blue);
+        }
+
+        .text-black {
+            color: var(--text-black);
+        }
+
+        .engagementSection img {
+            width: 250px;
+            height: 250px;
+            box-shadow: 0px 0px 2px #000;
+            border-radius: 50%;
+            border: 4px solid #fff;
+        }
+
+        .EngagementActive {
+            transition: all 0.5s;
+            border-radius: 10px;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .EngagementActive:hover {
+            will-change: transform;
+            transform: translate3d(-1.1626px, -14.314px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+            box-shadow: 1px 1px 70px 18px rgb(0 0 0 / 23%);
+
+        }
+
+        .engagementSection h3 {
+            font-size: 1.5rem;
+        }
+
+        /* middle banner css */
+
+
+        .cover-container {
+            background: url('./dist/assets/img/newsBanner.jpg') !important;
+            background-size: cover !important;
+            height: 550px
+        }
+
+        .innercustom {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            padding-left: 50px;
+        }
+
+        .innercustom .cover-heading {
+            font-size: 55px !important;
+            font-weight: bold;
+            letter-spacing: .02em;
+            color: var(--banner-title-text-color) !important;
+        }
+
+        .innercustom .site-description {
+            font-size: 24px !important;
+            font-weight: normal;
+            opacity: 1 !important;
+            width: 34%;
+            color: var(--banner-title-text-color) !important;
+        }
+
+        .c-card {
+            position: absolute;
+            display: inline-block;
+            width: 400px;
+            cursor: pointer;
+            right: 200px;
+        }
+
+        .c-card {
+            transition: all 0.5s;
+        }
+
+        .c-card:hover {
+            will-change: transform;
+            transform: translate3d(-1.1626px, -14.314px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+        }
+
+        .newsSection-second mb-5 p {
+            font-size: 16px;
+        }
+
+        .newsSection h5 {
+            font-weight: lighter;
+        }
+
+        .newsSection-second mb-5 h2 {
+            color: var(--news-heading-color);
+            font-weight: lighter;
+        }
+
+        @media screen and (min-width: 1920px) {
+            .c-card_back {
+                padding: 40px;
+            }
+        }
+
+        @media screen and (min-width: 1440px) {
+            .c-card_back {
+                padding: 30px;
+            }
+        }
+
+        .c-card_back {
+            padding: 20px;
+            -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+            will-change: transform;
+            transform: translate3d(0.0014px, -19.9964px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+        }
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .image-19 {
+            border-radius: 20px;
+            box-shadow: -31px 147px 20px -7px #000;
+            -webkit-transform: rotateX(20deg) rotateY(0deg) rotateZ(-26deg);
+            transform: rotateX(20deg) rotateY(0deg) rotateZ(-26deg);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        .newsSection-second mb-5 {
+            margin-top: 14rem;
+            margin-bottom: 5rem;
+        }
+
+        /* table list */
+    </style>
+</head>
+
+<body>
+    <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+        <main role="main" class="innercustom">
+            <h1 class="white-text cover-heading "
+                style="display: block !important; visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInDown;">
+                Professional card printing</h1>
+            <p class="site-description">
+                the new Multiline Printing Tool</p>
+            <div class="c-card">
+                <div class="c-card_back">
+                    <img src="./dist/assets/img/cardDebit.png" loading="lazy" sizes="100vw" alt=""
+                        class="image-19 img-fluid">
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="newsSection mt-5 pt-5">
+
+        <div class="container text-center">
+            <h5 class="text-uppercase">What is the multiline printing tool?</h5>
+            <p class="mt-3 display-5">Exception Design, finest materials and unrivaled quality</p>
+            The falsification of documents is easier than ever before.
+            Documents can be ordered illegally</p>
+        </div>
+        <div class="newsSection-second mb-5  mt-5">
+            <div class="container">
+                <div class="news-padding">
+                    <div class="row">
+                        <div class="col-sm-4 ">
+                            <h2 class="text-dark mb-4">Data Analytics</h2>
+                            <p>The falsification of documents is easier than ever before.
+                                Documents can be ordered <span class="text-black text-bold">increase</span> illegally
+                                via
+                                the
+                                internet
+                                or
+                                simply forged on the basis of a suitable template .
+                                The damage to the economy and society is immense.
+                                With the emark secure we provide a unique solution for f
+                                orgery-proof protection and easy verification of important physical
+                                and digital documents, fully mobile and useable everywhere.</p>
+                        </div>
+                        <div class="col-sm-6 offset-2">
+                            <img src="./dist/assets/img/NEWS.jpg" class="w-100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsSection-second mb-5">
+            <div class="container">
+                <div class="news-padding">
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <img src="./dist/assets/img/NEWS.jpg" class="w-100" />
+                        </div>
+                        <div class=" col-sm-4 offset-2">
+                            <h2 class="text-dark  mb-4">Brand Awareness</h2>
+                            <p>The falsification of documents is easier than ever before.
+                                Documents can be ordered <span class="text-black">increase</span> illegally via the
+                                internet
+                                or
+                                simply forged on the basis of a suitable template .
+                                The damage to the economy and society is immense.
+                                With the emark secure we provide a unique solution for f
+                                orgery-proof protection and easy verification of important physical
+                                and digital documents, fully mobile and useable everywhere.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsSection-second mb-5">
+            <div class="container">
+                <div class="news-padding">
+                    <div class="row">
+                        <div class="col-sm-4 ">
+                            <h2 class="text-dark  mb-4">Customer Engagement</h2>
+                            <p>The falsification of documents is easier than ever before.
+                                Documents can be ordered illegally via the internet or
+                                simply forged on the basis of a suitable template .
+                                The damage to the economy <span class="text-black">increase</span> and society is
+                                immense.
+                                With the emark secure we provide a unique solution for f
+                                orgery-proof protection and easy verification of important physical
+                                and digital documents, fully mobile and useable everywhere.</p>
+                        </div>
+                        <div class="col-sm-6 offset-2">
+                            <img src="./dist/assets/img/NEWS.jpg" class="w-100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsSection-second mb-5">
+            <div class="container">
+                <div class="news-padding">
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <img src="./dist/assets/img/NEWS.jpg" class="w-100" />
+                        </div>
+                        <div class=" col-sm-4 offset-2">
+                            <h2 class="text-dark  mb-4">Brand Awareness</h2>
+                            <p>The falsification of documents is easier than ever before.
+                                Documents can be ordered <span class="text-black">increase</span> via the internet or
+                                simply forged on the basis of a suitable template .
+                                The damage to the economy and society is immense.
+                                With the emark secure we provide a unique solution for f
+                                orgery-proof protection and easy verification of important physical
+                                and digital documents, fully mobile and useable everywhere</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsSection-second engagementSection mb-5">
+            <div class="container">
+                <div class="news-padding text-center">
+                    <h3 class="text-dark  mb-5">Many Industry stand to gain Wi-Spot devices</h3>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="EngagementActive">
+                                <div class="row">
+                                    <div class="col-sm-12  mb-5">
+                                        <img src="./dist/assets/img/NEWS.jpg" />
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <h2 class="text-dark  mb-4">Food</h2>
+                                        <p>The falsification of documents is easier than ever before.
+                                            Documents can be ordered via the internet or
+                                            simply forged on the basis of a suitable template .
+                                            The damage to the economy and society is immense.
+                                            With the emark secure we provide a unique solution for f
+                                            orgery-proof protection and easy verification of important physical
+                                            and digital documents, fully mobile and useable everywhere</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 ">
+                            <div class="EngagementActive">
+                                <div class="row">
+                                    <div class="col-sm-12  mb-5">
+                                        <img src="./dist/assets/img/NEWS.jpg" />
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <h2 class="text-dark  mb-4">Fashion</h2>
+                                        <p>The falsification of documents is easier than ever before.
+                                            Documents can be ordered via the internet or
+                                            simply forged on the basis of a suitable template .
+                                            The damage to the economy and society is immense.
+                                            With the emark secure we provide a unique solution for f
+                                            orgery-proof protection and easy verification of important physical
+                                            and digital documents, fully mobile and useable everywhere</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 ">
+                            <div class="EngagementActive">
+                                <div class="row">
+                                    <div class="col-sm-12  mb-5">
+                                        <img src="./dist/assets/img/NEWS.jpg" />
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <h2 class="text-dark  mb-4">Gastronomy</h2>
+                                        <p>The falsification of documents is easier than ever before.
+                                            Documents can be ordered via the internet or
+                                            simply forged on the basis of a suitable template .
+                                            The damage to the economy and society is immense.
+                                            With the emark secure we provide a unique solution for f
+                                            orgery-proof protection and easy verification of important physical
+                                            and digital documents, fully mobile and useable everywhere</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src=" assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="dist/assets/js/vendor/owl.carousel.min.js"></script>
+    <script src="dist/assets/js/vendor/swiper.min.js"></script>
+    <script src="dist/assets/js/vendor/video.min.js"></script>
+    <script src="dist/assets/js/vendor/aos.js"></script>
+    <script src="dist/assets/js/vendor/FontAwesome.js"></script>
+    <!-- build:js -->
+    <script src="assets/js/app.js"></script>
+    <!-- endbuild -->
+    <script>
+        $(document).ready(function () {
+
+
+        });
+    </script>
+</body>
+
+</html>
