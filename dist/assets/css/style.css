@@ -1856,6 +1856,9 @@ div[id*='contacts-webchat-'] .text {
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1500px) {
+    .c-card {
+        right: 100px;
+    }
 
     .book {
         bottom: -40px;
