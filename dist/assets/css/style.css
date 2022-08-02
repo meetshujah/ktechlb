@@ -153,12 +153,12 @@ ul.navbar-nav li a {
 /* override bootstrap classess */
 
 /* slider banner */
-.swiper-container {
+.bannerSection .swiper-container {
     width: 100%;
     height: 100%;
 }
 
-.swiper-slide {
+.bannerSection .swiper-slide {
     text-align: center;
     font-size: 1.286rem;
     background: var(--white);
@@ -177,15 +177,15 @@ ul.navbar-nav li a {
     align-items: center;
 }
 
-.x,
-.y {
+.bannerSection .x,
+.bannerSection .y {
     position: absolute;
     top: 10px;
     left: 10px;
     z-index: 1000;
 }
 
-.y {
+.bannerSection .y {
     left: 70px;
 }
 
@@ -197,7 +197,7 @@ ul.navbar-nav li a {
     margin-top: 85px;
 }
 
-.bannerSection .book {
+.book {
     right: 13%;
     content: url(../img/book2.png);
     position: absolute;
@@ -626,9 +626,11 @@ img.box-image {
     padding: 5px;
 }
 
-#owl-carousel2 .item:hover .product-detail {
+#owl-carousel2 .item:hover .product-detail,
+#innerBookCarousel .item:hover .product-detail {
     opacity: 1;
 }
+
 
 .product-detail {
     position: absolute;
@@ -781,7 +783,8 @@ img.box-image {
     object-fit: cover;
 }
 
-.video-player .play-toggle svg {
+.video-player .play-toggle svg,
+.play-toggle-book svg {
     stroke: #e4ebf2;
     transition: transform .15s;
     width: 100px;
@@ -796,13 +799,17 @@ img.box-image {
 }
 
 @media (min-width: 1224px) {
-    .video-player .play-toggle {
+
+    .video-player .play-toggle,
+    .play-toggle-book {
         font-size: 7.143rem;
     }
 }
 
 @media (min-width: 768px) {
-    .video-player .play-toggle {
+
+    .video-player .play-toggle,
+    .play-toggle-book {
         font-size: 5.714rem;
     }
 
@@ -872,7 +879,8 @@ li.inner-dropdown a {
     }
 }
 
-.video-player .play-toggle {
+.video-player .play-toggle,
+.play-toggle-book {
     position: absolute;
     z-index: 9;
     top: 50%;
@@ -1284,6 +1292,172 @@ div[id*='contacts-webchat-'] .text {
     padding: 150px 30px !important
 }
 
+/*about */
+
+/* inner page banner book */
+
+/*catalogue Section start*/
+
+.innerPdfViewer {
+    background-color: var(--white);
+    height: 1157px;
+}
+
+.heading-innerPage {
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.06rem;
+    margin-bottom: 2rem;
+}
+
+.heading-innerPage:after {
+    content: '';
+    display: block;
+    width: 51px;
+    height: 5px;
+    background: #e90412;
+    margin-top: 1rem;
+}
+
+.paraText {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text-para-big {
+    font-size: 1.4rem;
+
+}
+
+.bookVideoSlider {
+    width: 100%;
+    height: 100%;
+}
+
+
+.play-toggle-book {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.bookVideoSlider .swiper-slide {
+    width: 300px;
+}
+
+/* reset list */
+.bookVideoSlider ul.swiper-wrapper {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*catalogue Section end*/
+/* whatisemarklink css */
+.bggreyabout {
+    display: inline-block;
+    width: 100%;
+    color: #3e3e3f !important;
+}
+
+.banner-left-text {
+    text-align: left !important;
+    max-width: 700px !important;
+}
+
+.bggreyabout h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.werwer {
+    padding-bottom: 30px !important;
+    margin-bottom: 15px !important;
+    background: transparent url(../img/werwer.png) bottom left 0px / 92px no-repeat !important;
+}
+
+.bggreyabout p {
+    font-size: 18px !important;
+}
+
+.extrafeatureshow {
+    width: 100%;
+}
+
+
+
+
+.imgabouttextcustom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    min-height: 200px;
+    max-width: 70%;
+    /* margin: 0 auto; */
+}
+
+/* what is emarklink css */
+/* whatisemarklink css */
+.bggreyabout {
+    background: #e6e7e9;
+    display: inline-block;
+    width: 100%;
+    padding: 135px 30px 135px 195px;
+    color: #3e3e3f !important;
+}
+
+.banner-left-text {
+    text-align: left !important;
+    max-width: 700px !important;
+}
+
+.bggreyabout h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.werwer {
+    padding-bottom: 30px !important;
+    margin-bottom: 15px !important;
+    background: transparent url(../img/werwer.png) bottom left 0px / 92px no-repeat !important;
+}
+
+.bggreyabout p {
+    font-size: 18px !important;
+}
+
+.extrafeatureshow {
+    width: 100%;
+}
+
+
+
+.blockinside {
+    padding: 40px;
+    width: 100%;
+    display: inline-block;
+    border-bottom: none;
+    margin-bottom: 0px;
+    margin-top: -1px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+
+.imgabouttextcustom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    min-height: 200px;
+    max-width: 70%;
+    /* margin: 0 auto; */
+}
+
+/* what is emarklink css */
+/* inner page banner book */
 @media (min-width: 1025px) {
     #contacts-webchat-footer .contact-webchat-content {
         display: none;
@@ -1346,7 +1520,7 @@ div[id*='contacts-webchat-'] .text {
         font-size: 1.43rem !important
     }
 
-    .bannerSection .book {
+    .book {
         right: 0;
         bottom: -64%;
         transform: scale(.4);
@@ -1443,12 +1617,10 @@ div[id*='contacts-webchat-'] .text {
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1500px) {
-    .bannerSection .book {
-        width: 130px;
-    }
 
-    .bannerSection .book {
+    .book {
         bottom: -40px;
+        width: 130px;
     }
 
 
@@ -1465,7 +1637,7 @@ div[id*='contacts-webchat-'] .text {
 }
 
 @media screen and (min-width: 1599px) and (max-width: 1900px) {
-    .bannerSection .book {
+    .book {
 
         bottom: -36%;
     }
@@ -1515,6 +1687,8 @@ div[id*='contacts-webchat-'] .text {
     .container-md,
     .container-lg,
     .container-xl {
-        max-width: 1400px;
+
+        max-width: 1140px;
+
     }
 }
