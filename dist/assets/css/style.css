@@ -1959,4 +1959,17 @@ div[id*='contacts-webchat-'] .text {
         padding: 100px 0px 20px 0px
     }
 
+    .c-card {
+        width: 200px;
+        right: 0;
+        top: 120px;
+    }
+
+    .news-padding {
+        padding: 10px;
+    }
+
+    .newsSection-second p {
+        font-size: 1rem;
+    }
 }
