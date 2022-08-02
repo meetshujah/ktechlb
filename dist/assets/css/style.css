@@ -2,6 +2,10 @@
     --black: #000;
     --white: #ffffff;
     --banner-title-text-color: #303030;
+    --news-heading-color: rgb(51 51 51 / 57%);
+    --text-black: #000;
+    --news-blue: #EBEFF0;
+    --grey: #e6e7e9;
 
 }
 
@@ -1359,6 +1363,7 @@ div[id*='contacts-webchat-'] .text {
     display: inline-block;
     width: 100%;
     color: #3e3e3f !important;
+    overflow: hidden;
 }
 
 .banner-left-text {
@@ -1458,6 +1463,240 @@ div[id*='contacts-webchat-'] .text {
 
 /* what is emarklink css */
 /* inner page banner book */
+
+
+/* middle banner css */
+.news-padding {
+    padding: 100px;
+    background: var(--news-blue);
+}
+
+.text-black {
+    color: var(--text-black);
+}
+
+.engagementSection img {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 0px 2px #000;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.EngagementActive {
+    transition: all 0.5s;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.EngagementActive:hover,
+.EngagementActive.activeEng {
+    will-change: transform;
+    transform: translate3d(-1.1626px, -14.314px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    box-shadow: 1px 1px 70px 18px rgb(0 0 0 / 23%);
+
+}
+
+.engagementSection h3 {
+    font-size: 1.5rem;
+}
+
+/* middle banner css */
+
+/* icon at banner */
+
+/* ----------------- */
+/* Owl Styling Stuff */
+/* ----------------- */
+.videoBookSwiper .container {
+    overflow: hidden;
+}
+
+.videoBookSwiper .owl-carousel {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.videoBookSwiper .owl-stage-outer {
+    overflow: visible !important;
+}
+
+.videoBookSwiper .owl-item {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.videoBookSwiper .owl-nav button.owl-next {
+    background-color: red !important;
+    right: -30px;
+}
+
+.videoBookSwiper .owl-nav button {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-radius: 50%;
+}
+
+.videoBookSwiper .owl-nav button.owl-prev {
+    background-color: #01407a !important;
+    left: -30px;
+}
+
+.videoBookSwiper .owl-nav span {
+    font-size: 3rem;
+    position: relative;
+    top: -10px;
+    padding: 13px;
+    color: #fff;
+}
+
+/* table list */
+.list-ul {
+    color: #000;
+}
+
+.table-card {
+    min-height: 600px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.list-ul li {
+    margin-bottom: 10px;
+}
+
+/* icon at banner */
+
+/* news section */
+.news-cover-container {
+    background: url('../img/newsBanner.jpg') !important;
+    background-size: cover !important;
+    height: 550px
+}
+
+
+.grey {
+    background-color: var(--grey);
+}
+
+.innercustom {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 50px;
+}
+
+.innercustom .cover-heading {
+    font-size: 55px !important;
+    font-weight: bold;
+    letter-spacing: .02em;
+    color: var(--banner-title-text-color) !important;
+}
+
+.innercustom .site-description {
+    font-size: 24px !important;
+    font-weight: normal;
+    opacity: 1 !important;
+    width: 34%;
+    color: var(--banner-title-text-color) !important;
+}
+
+.c-card {
+    position: absolute;
+    display: inline-block;
+    width: 400px;
+    cursor: pointer;
+    right: 200px;
+}
+
+.c-card {
+    transition: all 0.5s;
+}
+
+.c-card:hover {
+    will-change: transform;
+    transform: translate3d(-1.1626px, -14.314px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.newsSection-second p {
+    font-size: 16px;
+}
+
+.newsSection h5 {
+    font-weight: lighter;
+}
+
+.newsSection-second h2 {
+    color: var(--news-heading-color);
+    font-weight: lighter;
+}
+
+@media screen and (min-width: 1920px) {
+    .c-card_back {
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .c-card_back {
+        padding: 30px;
+    }
+}
+
+.c-card_back {
+    padding: 20px;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    will-change: transform;
+    transform: translate3d(0.0014px, -19.9964px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.newsSection img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.image-19 {
+    border-radius: 20px;
+    box-shadow: -31px 147px 20px -7px rgb(0 0 0 / 39%);
+    -webkit-transform: rotateX(20deg) rotateY(0deg) rotateZ(-26deg);
+    transform: rotateX(20deg) rotateY(0deg) rotateZ(-26deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.newsSection .newsSection-second {
+    margin-top: 14rem;
+    margin-bottom: 5rem;
+}
+
+/* news section */
 @media (min-width: 1025px) {
     #contacts-webchat-footer .contact-webchat-content {
         display: none;
