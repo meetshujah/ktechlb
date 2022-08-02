@@ -27,163 +27,11 @@
     <style>
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <style>
-        :root {
-            --news-heading-color: rgb(51 51 51 / 57%);
-            /* middle banner css */
-            --text-black: #000;
-            --news-blue: #EBEFF0;
-            /* middle banner css */
-        }
 
-        /* middle banner css */
-        .news-padding {
-            padding: 100px;
-            background: var(--news-blue);
-        }
-
-        .text-black {
-            color: var(--text-black);
-        }
-
-        .engagementSection img {
-            width: 250px;
-            height: 250px;
-            box-shadow: 0px 0px 2px #000;
-            border-radius: 50%;
-            border: 4px solid #fff;
-        }
-
-        .EngagementActive {
-            transition: all 0.5s;
-            border-radius: 10px;
-            padding: 20px;
-            cursor: pointer;
-        }
-
-        .EngagementActive:hover {
-            will-change: transform;
-            transform: translate3d(-1.1626px, -14.314px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-            transform-style: preserve-3d;
-            box-shadow: 1px 1px 70px 18px rgb(0 0 0 / 23%);
-
-        }
-
-        .engagementSection h3 {
-            font-size: 1.5rem;
-        }
-
-        /* middle banner css */
-
-
-        .cover-container {
-            background: url('./dist/assets/img/newsBanner.jpg') !important;
-            background-size: cover !important;
-            height: 550px
-        }
-
-        .innercustom {
-            display: flex;
-            align-items: start;
-            justify-content: center;
-            flex-direction: column;
-            height: 100%;
-            padding-left: 50px;
-        }
-
-        .innercustom .cover-heading {
-            font-size: 55px !important;
-            font-weight: bold;
-            letter-spacing: .02em;
-            color: var(--banner-title-text-color) !important;
-        }
-
-        .innercustom .site-description {
-            font-size: 24px !important;
-            font-weight: normal;
-            opacity: 1 !important;
-            width: 34%;
-            color: var(--banner-title-text-color) !important;
-        }
-
-        .c-card {
-            position: absolute;
-            display: inline-block;
-            width: 400px;
-            cursor: pointer;
-            right: 200px;
-        }
-
-        .c-card {
-            transition: all 0.5s;
-        }
-
-        .c-card:hover {
-            will-change: transform;
-            transform: translate3d(-1.1626px, -14.314px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-            transform-style: preserve-3d;
-        }
-
-        .newsSection-second mb-5 p {
-            font-size: 16px;
-        }
-
-        .newsSection h5 {
-            font-weight: lighter;
-        }
-
-        .newsSection-second mb-5 h2 {
-            color: var(--news-heading-color);
-            font-weight: lighter;
-        }
-
-        @media screen and (min-width: 1920px) {
-            .c-card_back {
-                padding: 40px;
-            }
-        }
-
-        @media screen and (min-width: 1440px) {
-            .c-card_back {
-                padding: 30px;
-            }
-        }
-
-        .c-card_back {
-            padding: 20px;
-            -webkit-backface-visibility: visible;
-            backface-visibility: visible;
-            will-change: transform;
-            transform: translate3d(0.0014px, -19.9964px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-            transform-style: preserve-3d;
-        }
-
-        img {
-            max-width: 100%;
-            vertical-align: middle;
-            display: inline-block;
-        }
-
-        .image-19 {
-            border-radius: 20px;
-            box-shadow: -31px 147px 20px -7px #000;
-            -webkit-transform: rotateX(20deg) rotateY(0deg) rotateZ(-26deg);
-            transform: rotateX(20deg) rotateY(0deg) rotateZ(-26deg);
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-        }
-
-        .newsSection-second mb-5 {
-            margin-top: 14rem;
-            margin-bottom: 5rem;
-        }
-
-        /* table list */
-    </style>
 </head>
 
 <body>
-    <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+    <div class=" d-flex w-100 p-3 mx-auto flex-column news-cover-container">
         <main role="main" class="innercustom">
             <h1 class="white-text cover-heading "
                 style="display: block !important; visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInDown;">
@@ -200,7 +48,7 @@
     </div>
     <div class="newsSection mt-5 pt-5">
 
-        <div class="container text-center">
+        <div class="container text-center" data-aos="zoom-in-up" data-aos-duration="1200">
             <h5 class="text-uppercase">What is the multiline printing tool?</h5>
             <p class="mt-3 display-5">Exception Design, finest materials and unrivaled quality</p>
             The falsification of documents is easier than ever before.
@@ -210,7 +58,7 @@
             <div class="container">
                 <div class="news-padding">
                     <div class="row">
-                        <div class="col-sm-4 ">
+                        <div class="col-sm-4 " data-aos="zoom-in-right" data-aos-duration="1200">
                             <h2 class="text-dark mb-4">Data Analytics</h2>
                             <p>The falsification of documents is easier than ever before.
                                 Documents can be ordered <span class="text-black text-bold">increase</span> illegally
@@ -224,7 +72,7 @@
                                 orgery-proof protection and easy verification of important physical
                                 and digital documents, fully mobile and useable everywhere.</p>
                         </div>
-                        <div class="col-sm-6 offset-2">
+                        <div class="col-sm-6 offset-2" data-aos="zoom-in-left" data-aos-duration="1200">
                             <img src="./dist/assets/img/NEWS.jpg" class="w-100" />
                         </div>
                     </div>
@@ -236,10 +84,10 @@
                 <div class="news-padding">
                     <div class="row">
 
-                        <div class="col-sm-6">
+                        <div class="col-sm-6" data-aos="zoom-in-right" data-aos-duration="1200">
                             <img src="./dist/assets/img/NEWS.jpg" class="w-100" />
                         </div>
-                        <div class=" col-sm-4 offset-2">
+                        <div class=" col-sm-4 offset-2" data-aos="zoom-in-left" data-aos-duration="1200">
                             <h2 class="text-dark  mb-4">Brand Awareness</h2>
                             <p>The falsification of documents is easier than ever before.
                                 Documents can be ordered <span class="text-black">increase</span> illegally via the
@@ -259,7 +107,7 @@
             <div class="container">
                 <div class="news-padding">
                     <div class="row">
-                        <div class="col-sm-4 ">
+                        <div class="col-sm-4 " data-aos="zoom-in-right" data-aos-duration="1200">
                             <h2 class="text-dark  mb-4">Customer Engagement</h2>
                             <p>The falsification of documents is easier than ever before.
                                 Documents can be ordered illegally via the internet or
@@ -270,7 +118,7 @@
                                 orgery-proof protection and easy verification of important physical
                                 and digital documents, fully mobile and useable everywhere.</p>
                         </div>
-                        <div class="col-sm-6 offset-2">
+                        <div class="col-sm-6 offset-2" data-aos="zoom-in-left" data-aos-duration="1200">
                             <img src="./dist/assets/img/NEWS.jpg" class="w-100" />
                         </div>
                     </div>
@@ -282,10 +130,10 @@
                 <div class="news-padding">
                     <div class="row">
 
-                        <div class="col-sm-6">
+                        <div class="col-sm-6" data-aos="zoom-in-right" data-aos-duration="1200">
                             <img src="./dist/assets/img/NEWS.jpg" class="w-100" />
                         </div>
-                        <div class=" col-sm-4 offset-2">
+                        <div class=" col-sm-4 offset-2" data-aos="zoom-in-left" data-aos-duration="1200">
                             <h2 class="text-dark  mb-4">Brand Awareness</h2>
                             <p>The falsification of documents is easier than ever before.
                                 Documents can be ordered <span class="text-black">increase</span> via the internet or
@@ -304,7 +152,7 @@
                 <div class="news-padding text-center">
                     <h3 class="text-dark  mb-5">Many Industry stand to gain Wi-Spot devices</h3>
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-4" data-aos="fade-right" data-aos-duration="1500">
                             <div class="EngagementActive">
                                 <div class="row">
                                     <div class="col-sm-12  mb-5">
@@ -323,8 +171,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 ">
-                            <div class="EngagementActive">
+                        <div class="col-sm-4 " data-aos="fade-up" data-aos-duration="1500">
+                            <div class="EngagementActive activeEng">
                                 <div class="row">
                                     <div class="col-sm-12  mb-5">
                                         <img src="./dist/assets/img/NEWS.jpg" />
@@ -342,7 +190,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 ">
+                        <div class="col-sm-4 " data-aos="fade-left" data-aos-duration="1500">
                             <div class="EngagementActive">
                                 <div class="row">
                                     <div class="col-sm-12  mb-5">
@@ -384,7 +232,7 @@
     <!-- endbuild -->
     <script>
         $(document).ready(function () {
-
+            AOS.init();
 
         });
     </script>

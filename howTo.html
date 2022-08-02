@@ -27,109 +27,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <style>
-        :root {
-            --news-heading-color: rgb(51 51 51 / 57%);
-
-            --grey: #e6e7e9;
-        }
-
-        .grey {
-            background-color: var(--grey);
-        }
-
-        .cover-container {
-            background: url('./dist/assets/img/newsBanner.jpg') !important;
-            background-size: cover !important;
-            height: 550px
-        }
-
-        .innercustom {
-            display: flex;
-            align-items: start;
-            justify-content: center;
-            flex-direction: column;
-            height: 100%;
-            padding-left: 50px;
-        }
-
-        .innercustom .cover-heading {
-            font-size: 55px !important;
-            font-weight: bold;
-            letter-spacing: .02em;
-            color: var(--banner-title-text-color) !important;
-        }
-
-        .innercustom .site-description {
-            font-size: 24px !important;
-            font-weight: normal;
-            opacity: 1 !important;
-            width: 34%;
-            color: var(--banner-title-text-color) !important;
-        }
-
-        .c-card {
-            position: absolute;
-            display: inline-block;
-            width: 400px;
-            cursor: pointer;
-            right: 200px;
-        }
-
-        .c-card {
-            transition: all 0.5s;
-        }
-
-        .c-card:hover {
-            will-change: transform;
-            transform: translate3d(-1.1626px, -14.314px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-            transform-style: preserve-3d;
-        }
-
-        .newsSection-second p {
-            font-size: 16px;
-        }
-
-        .newsSection h5 {
-            font-weight: lighter;
-        }
-
-        .newsSection-second h2 {
-            color: var(--news-heading-color);
-            font-weight: lighter;
-        }
-
-
-
-
-
-
-        img {
-            max-width: 100%;
-            vertical-align: middle;
-            display: inline-block;
-        }
-
-        .image-19 {
-            border-radius: 20px;
-            box-shadow: -31px 147px 20px -7px #000;
-            -webkit-transform: rotateX(20deg) rotateY(0deg) rotateZ(-26deg);
-            transform: rotateX(20deg) rotateY(0deg) rotateZ(-26deg);
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-        }
-
-        .newsSection-second {
-            margin-top: 14rem;
-            margin-bottom: 5rem;
-        }
-
-        /* table list */
-    </style>
 </head>
 
 <body>
-    <div class="cover-container d-flex w-100 p-3 mx-auto flex-column position-relative">
+    <div class="news-cover-container d-flex w-100 p-3 mx-auto flex-column position-relative">
         <a class="book" href="iconAtBanner.html"></a>
         <main role="main" class="innercustom">
             <h1 class="white-text cover-heading ">
@@ -141,7 +42,7 @@
     </div>
     <section class="bggreyabout">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" data-aos="fade-up-left" data-aos-duration="1000">
                 <div class="col-md-12 text-center   banner-left-text">
                     <h2 class="fontStyle werwer">What is the e-mark ?</h2>
                     <p class="">
@@ -157,7 +58,7 @@
             <div class="col-md-12">
                 <div class="blockinside">
                     <div class="row">
-                        <div class="offset-md-2 col-md-4">
+                        <div class="offset-md-2 col-md-4" data-aos="fade-right" data-aos-duration="1000">
                             <div class=" imgabouttextcustom" style="float:left;">
                                 <div>
                                     <h3 class="fontStyle werwer">How does it work?</h3>
@@ -169,7 +70,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4 text-center" data-aos="fade-left" data-aos-duration="2000">
                             <img src="./dist/assets/img/news.jpg" class="w-100">
                         </div>
                     </div>
@@ -182,10 +83,10 @@
             <div class="col-md-12">
                 <div class="blockinside">
                     <div class="row">
-                        <div class="col-md-4 text-center offset-md-2">
+                        <div class="col-md-4 text-center offset-md-2" data-aos="fade-right" data-aos-duration="1000">
                             <img src="./dist/assets/img/news.jpg" class="w-100">
                         </div>
-                        <div class=" col-md-4 offset-md-1">
+                        <div class=" col-md-4 offset-md-1" data-aos="fade-left" data-aos-duration="1000">
                             <div class="imgabouttextcustom" style="float:left;">
                                 <div>
                                     <h3 class="fontStyle werwer">How does it work?</h3>
@@ -208,7 +109,7 @@
             <div class="col-md-12">
                 <div class="blockinside">
                     <div class="row">
-                        <div class="offset-md-2 col-md-4">
+                        <div class="offset-md-2 col-md-4" data-aos="fade-right" data-aos-duration="1000">
                             <div class="imgabouttextcustom" style="float:left;">
                                 <div>
                                     <h3 class="fontStyle werwer">How does it work?</h3>
@@ -220,7 +121,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4 text-center" data-aos="fade-left" data-aos-duration="1000">
                             <img src="./dist/assets/img/news.jpg" class="w-100">
                         </div>
                     </div>
@@ -233,10 +134,10 @@
             <div class="col-md-12">
                 <div class="blockinside">
                     <div class="row">
-                        <div class="col-md-4 text-center offset-md-2">
+                        <div class="col-md-4 text-center offset-md-2" data-aos="fade-right" data-aos-duration="1000">
                             <img src="./dist/assets/img/news.jpg" class="w-100">
                         </div>
-                        <div class=" col-md-4 offset-md-1">
+                        <div class=" col-md-4 offset-md-1" data-aos="fade-left" data-aos-duration="1000">
                             <div class="imgabouttextcustom" style="float:left;">
                                 <div>
                                     <h3 class="fontStyle werwer">How does it work?</h3>
@@ -282,7 +183,7 @@
     <!-- endbuild -->
     <script>
         $(document).ready(function () {
-
+            AOS.init();
 
         });
     </script>
