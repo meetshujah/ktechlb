@@ -979,7 +979,7 @@ ul.footer-social>li {
 
 .site-footer a {
     color: var(--white);
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .site-footer a:hover {
