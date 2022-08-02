@@ -1138,15 +1138,6 @@ ul.footer-social>li {
     text-transform: uppercase;
 }
 
-/* emark */
-@media (max-width:767px) {
-    .social-icons li.title {
-        display: block;
-        margin-right: 0;
-        font-weight: 600
-    }
-
-}
 
 #contacts-webchat-footer {
     position: relative;
@@ -1933,4 +1924,39 @@ div[id*='contacts-webchat-'] .text {
         max-width: 1140px;
 
     }
+}
+
+/* emark */
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+
+    .news-cover-container {
+        background: url(../img/newsBanner.jpg) !important;
+        background-size: cover !important;
+        height: 250px;
+        background-repeat: no-repeat;
+    }
+
+    .innercustom .cover-heading {
+        font-size: 2rem !important;
+    }
+
+    .imgabouttextcustom {
+        max-width: 100% !important;
+        margin-bottom: 50px;
+    }
+
+    .innercustom .site-description {
+        font-size: 1rem !important;
+    }
+
+    .bggreyabout {
+
+        padding: 100px 0px 20px 0px
+    }
+
 }
