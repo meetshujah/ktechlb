@@ -6,6 +6,7 @@
     --text-black: #000;
     --news-blue: #EBEFF0;
     --grey: #e6e7e9;
+    --light-grey: #8b8b8b;
 
 }
 
@@ -22,7 +23,11 @@ body {
     overflow-x: hidden;
 }
 
-
+.generalDetailSection ::marker {
+    content: "\f068";
+    font-family: 'FontAwesome';
+    padding-right: 10px;
+}
 
 h1,
 h2,
@@ -40,6 +45,14 @@ h6 {
 }
 
 /* utilties */
+.f-s-2 {
+    font-size: 1.2rem;
+}
+
+.container-fluid-sm {
+    padding-left: 120px;
+    padding-right: 120px;
+}
 
 .mt-60 {
     margin-top: 57px
@@ -365,18 +378,6 @@ p {
     border: none;
 }
 
-.accordion .card-header:first-child {
-    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
-}
-
-.accordion button {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    color: #473888;
-    font-size: 1.286rem;
-    text-decoration: none !important;
-}
 
 .accordion .card .card-body {
     color: #7992a0;
@@ -385,7 +386,61 @@ p {
 }
 
 /* accordion */
+/* how to video */
+#sync1 .item {
+    color: #FFF;
+    text-align: center;
+}
 
+#sync2 .owl-nav button.owl-next {
+    background-color: red !important;
+    right: -30px;
+}
+
+#sync2 .owl-nav button {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-radius: 50%;
+}
+
+#sync2 .owl-nav button.owl-prev {
+    background-color: #01407a !important;
+    left: -30px;
+}
+
+#sync2 .owl-nav span {
+    font-size: 3rem;
+    position: relative;
+    top: -10px;
+    padding: 13px;
+    color: #fff;
+}
+
+#sync2 .item {
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#sync2 .item h1 {
+    font-size: 18px;
+}
+
+#sync2 .owl-nav button {
+    top: 70px;
+}
+
+/* how to video */
 /* section 3 boxes */
 .sec_3 {
     padding: 100px 0;
@@ -1040,11 +1095,6 @@ ul.footer-social>li {
     border-right: none;
 }
 
-@media (max-width:991px) {
-    .site-footer [class^=col-] {
-        margin-bottom: 30px
-    }
-}
 
 
 .social-icons {
@@ -1284,7 +1334,7 @@ div[id*='contacts-webchat-'] .text {
 /*about */
 .cover-container {
     background-image: url('../img/bg2.jpg') !important;
-    padding: 150px 30px !important
+    padding: 150px 0px !important
 }
 
 /*about */
@@ -1384,15 +1434,7 @@ div[id*='contacts-webchat-'] .text {
 
 
 
-.imgabouttextcustom {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    min-height: 200px;
-    max-width: 70%;
-    /* margin: 0 auto; */
-}
+
 
 /* what is emarklink css */
 /* whatisemarklink css */
@@ -1442,21 +1484,36 @@ div[id*='contacts-webchat-'] .text {
     overflow: hidden;
 }
 
-.imgabouttextcustom {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    min-height: 200px;
-    max-width: 70%;
-    /* margin: 0 auto; */
-}
+
 
 /* what is emarklink css */
 /* inner page banner book */
 
 
 /* middle banner css */
+.newsSection img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: 237px;
+    display: inline-block;
+    width: 439px !important;
+}
+
+.middleBanner.newsSection .EngagementActive img {
+    display: inline !important;
+    width: 250px !important;
+    height: 250px;
+}
+
+.middleBanner.newsSection .newsSection-second {
+    margin-top: 4rem;
+}
+
+.middleBanner .newsSection-second p {
+    font-size: 1rem;
+    width: 439px;
+}
+
 .news-padding {
     padding: 100px;
     background: var(--news-blue);
@@ -1479,6 +1536,11 @@ div[id*='contacts-webchat-'] .text {
     border-radius: 10px;
     padding: 20px;
     cursor: pointer;
+}
+
+.middleBanner .EngagementActive p {
+    width: 250px;
+    margin: 0 auto;
 }
 
 .EngagementActive:hover,
@@ -1565,6 +1627,16 @@ div[id*='contacts-webchat-'] .text {
 /* table list */
 .list-ul {
     color: #000;
+    margin: 0;
+    padding: 15px;
+}
+
+.mt-85 {
+    margin-top: 85px;
+}
+
+.mt-10 {
+    margin-top: 10rem;
 }
 
 .table-card {
@@ -1573,8 +1645,16 @@ div[id*='contacts-webchat-'] .text {
     overflow-y: auto;
 }
 
+.row-grid {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 100px;
+    grid-auto-flow: column;
+}
+
 .list-ul li {
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 /* icon at banner */
@@ -1583,7 +1663,8 @@ div[id*='contacts-webchat-'] .text {
 .news-cover-container {
     background: url('../img/newsBanner.jpg') !important;
     background-size: cover !important;
-    height: 550px
+    height: 550px;
+    margin-top: 85px;
 }
 
 
@@ -1644,8 +1725,48 @@ div[id*='contacts-webchat-'] .text {
 .newsSection-second h2 {
     color: var(--news-heading-color);
     font-weight: lighter;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
+/* opt1 */
+
+.flipBookPDF {
+    height: 95vh;
+    width: 100%;
+    margin: 20px auto;
+    box-shadow: 0 0 42px rgb(0 0 0 / 12%);
+}
+
+
+
+.opt1 .fullscreen {
+    background-color: #333;
+}
+
+.opt1 .examples {
+    position: relative;
+}
+
+.opt1 .examples div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.opt1 .examples a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.opt1 .examples a:hover {
+    color: #fff;
+}
+
+/* opt1 */
 @media screen and (min-width: 1920px) {
     .c-card_back {
         padding: 40px;
@@ -1673,6 +1794,11 @@ div[id*='contacts-webchat-'] .text {
     display: inline-block;
 }
 
+.w-439 {
+    width: 439px;
+
+}
+
 .image-19 {
     border-radius: 20px;
     box-shadow: -31px 147px 20px -7px rgb(0 0 0 / 39%);
@@ -1685,6 +1811,26 @@ div[id*='contacts-webchat-'] .text {
 .newsSection .newsSection-second {
     margin-top: 14rem;
     margin-bottom: 5rem;
+}
+
+.imgabouttextcustom {
+    width: 439px;
+}
+
+.accordion .card-header a {
+    color: var(--light-grey);
+    font-size: 1.3rem;
+}
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    float: right;
+}
+
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067";
 }
 
 /* news section */
@@ -1883,7 +2029,48 @@ div[id*='contacts-webchat-'] .text {
 }
 
 @media (max-width:767px) {
+    .row-grid {
+        display: grid;
+        flex-wrap: wrap;
+        gap: 100px;
+        grid-auto-flow: row;
+    }
 
+    body nav:first-child .navbar-nav {
+        flex-wrap: wrap;
+    }
+
+    .innercustom {
+        padding-left: 0px;
+    }
+
+    .container-fluid-sm {
+        padding: 0;
+    }
+
+    .xs-copyright-text p img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .xs-copyright-text {
+        flex-direction: column;
+    }
+
+    .xs-copyright-text p~div {
+        margin-left: inherit;
+    }
+
+    ul.footer-social {
+        text-align: center;
+        margin: 20px;
+        margin-left: auto !important;
+        width: 100% !important;
+    }
+
+    .newsSection-second p {
+        width: 100% !important;
+    }
 
     .emark-text .text {
         font-size: 1.43rem !important;
@@ -1939,6 +2126,7 @@ div[id*='contacts-webchat-'] .text {
         background-size: cover !important;
         height: 250px;
         background-repeat: no-repeat;
+        margin-top: 123px;
     }
 
     .innercustom .cover-heading {
@@ -1962,7 +2150,18 @@ div[id*='contacts-webchat-'] .text {
     .c-card {
         width: 200px;
         right: 0;
-        top: 120px;
+        top: 226px;
+        line-height: 1.3;
+        font-weight: 700;
+        font-style: normal;
+        width: 400px;
+        position: absolute;
+        z-index: 999;
+        color: white;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%)
     }
 
     .news-padding {
