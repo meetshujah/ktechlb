@@ -446,7 +446,116 @@
       </div>
     </div>
   </div>
+  <div class="opt2 container">
+    <div class="row">
+      <div class="col">
+        <div id="accordion" class="accordion mt-5 mb-5">
 
+          <div class="border-bottom card-header collapsed  text-center" data-toggle="collapse" href="#collapseOne">
+            <a class="card-title">
+              News and recent
+            </a>
+          </div>
+          <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
+            <div class="newsSection">
+              <div class="newsSection-second   mt-5 pt-3">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6 " data-aos="zoom-in-right" data-aos-duration="1200">
+                      <div class="w-439">
+                        <h2>News and recent</h2>
+                        <p>The falsification of documents is easier than ever before.
+                          Documents can be ordered illegally via the internet or
+                          simply forged on the basis of a suitable template .
+                          The damage to the economy and society is immense.
+                          With the emark secure we provide a unique solution for f
+                          orgery-proof protection and easy verification of important physical
+                          and digital documents, fully mobile and useable everywhere.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6" data-aos="zoom-in-left" data-aos-duration="1200">
+                      <img src="./dist/assets/img/NEWS.jpg" class="w-439" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="newsSection-second">
+                <div class="container">
+                  <div class="row">
+
+                    <div class="col-sm-6" data-aos="zoom-in-right" data-aos-duration="1200">
+                      <video class="w-439" muted loop autoplay controls>
+                        <source src="./dist/assets/img/bannervideo.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class=" col-sm-6" data-aos="zoom-in-left" data-aos-duration="1200">
+                      <div class="w-439">
+                        <h2>News and recent</h2>
+                        <p>The falsification of documents is easier than ever before.
+                          Documents can be ordered illegally via the internet or
+                          simply forged on the basis of a suitable template .
+                          The damage to the economy and society is immense.
+                          With the emark secure we provide a unique solution for f
+                          orgery-proof protection and easy verification of important physical
+                          and digital documents, fully mobile and useable everywhere.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="newsSection-second">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6 " data-aos="zoom-in-right" data-aos-duration="1200">
+                      <div class="w-439">
+                        <h2>News and recent</h2>
+                        <p>The falsification of documents is easier than ever before.
+                          Documents can be ordered illegally via the internet or
+                          simply forged on the basis of a suitable template .
+                          The damage to the economy and society is immense.
+                          With the emark secure we provide a unique solution for f
+                          orgery-proof protection and easy verification of important physical
+                          and digital documents, fully mobile and useable everywhere.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6" data-aos="zoom-in-left" data-aos-duration="1200">
+                      <img src="./dist/assets/img/NEWS.jpg" class="w-100" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="newsSection-second">
+                <div class="container">
+                  <div class="row">
+
+                    <div class="col-sm-6" data-aos="zoom-in-right" data-aos-duration="1200">
+                      <video class="w-439" muted loop autoplay controls>
+                        <source src="./dist/assets/img/bannervideo.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class=" col-sm-6" data-aos="zoom-in-left" data-aos-duration="1200">
+                      <div class="w-439">
+                        <h2>News and recent</h2>
+                        <p>The falsification of documents is easier than ever before.
+                          Documents can be ordered illegally via the internet or
+                          simply forged on the basis of a suitable template .
+                          The damage to the economy and society is immense.
+                          With the emark secure we provide a unique solution for f
+                          orgery-proof protection and easy verification of important physical
+                          and digital documents, fully mobile and useable everywhere</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
   <section data-layer="main-video" class="bg-white">
     <div id="shopify-section-main-video" class="shopify-section">
       <div class="video-player bg-black" data-section-id="main-video" data-section-type="banner">
@@ -871,6 +980,35 @@
         vid.pause();
         $('.video-preview-wrapper,.play-toggle').show();
       });
+      $('#collapseOne').on('show.bs.collapse', function () {
+        setTimeout(function () {
+
+        }, 1000)
+        var videoSlider1 = $('.owl-opt2');
+        videoSlider1.owlCarousel({
+          loop: true,
+          margin: 70,
+          nav: true,
+          dots: false,
+          items: 1
+        });
+
+        videoSlider1.on('translate.owl.carousel', function (e) {
+          $('.owl-item .item video').each(function () {
+            // pause playing video - after sliding
+            $(this).get(0).pause();
+          });
+        });
+
+        videoSlider1.on('translated.owl.carousel', function (e) {
+          // check: does the slide have a video?
+          if ($('.owl-item.active').find('video').length !== 0) {
+            // play video in active slide
+            $('.owl-item.active .item video').get(0).play();
+          }
+        });
+      })
+
     });
   </script>
 </body>

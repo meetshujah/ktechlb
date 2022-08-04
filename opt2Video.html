@@ -446,7 +446,120 @@
       </div>
     </div>
   </div>
+  <div class="opt2 container">
+    <div class="row">
+      <div class="col">
+        <div id="accordion" class="accordion mt-5 mb-5">
 
+          <div class="border-bottom card-header collapsed  text-center" data-toggle="collapse" href="#collapseOne">
+            <a class="card-title">
+              News and recent
+            </a>
+          </div>
+          <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
+            <section class="bookVideo  mt-5 mb-5">
+              <div class="container">
+                <div class="heading-innerPage font-weight-bold text-dark" data-aos="fade-up" data-aos-duration="500">The
+                  COLOP e-mark Wins the NAOP 2021</div>
+                <div data-aos="fade-up" data-aos-duration="500">
+                  <p class="text-bold font-weight-bold text-para-big text-dark mb-5">The COLOP e-mark is a useful tool
+                    in
+                    many
+                    industries. It
+                    is ideally suited
+                    for use in
+                    offices, hotels and restaurants, in event and
+                    agency management
+                  </p>
+                  <p class="paraText">Flip through our e-mark catalogue to find out how you could use it in your
+                    business
+                    Flip
+                    through our e-mark catalogue to find out how you could use it in your business
+                    Flip through our e-mark catalogue to <strong class="text-dark">Europen Office Product Award</strong>
+                    find out how you
+                    could
+                    use it in your business
+                    Flip through our e-mark catalogue to find out how you could use it in your business.</p>
+                  <p class="paraText">Flip through our e-mark catalogue to find out how you could use it in your
+                    business
+                    Flip
+                    through our e-mark catalogue to find <strong class="text-dark">Europen Office Product Award</strong>
+                    out
+                    how you could use
+                    it in your business
+                    Flip through our e-mark catalogue to find out how you could use it in your business
+                    Flip through our e-mark catalogue to find out how you could use it in your business.</p>
+                  <p class="paraText">Flip through our e-mark catalogue to find out how you could use it in your
+                    business
+                    Flip
+                    through our e-mark catalogue to find out how you could use it in your business
+                    Flip through our e-mark catalogue to find out how you could use it in your business
+                    Flip through our e-mark catalogue to find out how you could use it in your business.</p>
+                  <p class="paraText">Flip through our e-mark catalogue to find out how you could use it in your
+                    business
+                    Flip
+                    through our e-mark catalogue to find <strong class="text-dark">Europen Office Product Award</strong>
+                    out
+                    how you could use
+                    it in your business
+                    Flip through our e-mark catalogue to find out how you could use it in your business
+                    Flip through our e-mark catalogue to find out how you could use it in your business.</p>
+                  <p class="paraText">Flip through our e-mark catalogue to find out how you could use it in your
+                    business
+                    Flip
+                    through our e-mark catalogue to find out how you could use it in your business
+                    Flip through our e-mark catalogue to <strong class="text-dark">Europen Office Product Award</strong>
+                    find out how you
+                    could
+                    use it in your business
+                    Flip through our e-mark catalogue to find out how you could use it in your business.</p>
+                  <p class="paraText">Flip through our e-mark catalogue to find out how you could use it in your
+                    business
+                    Flip
+                    through our e-mark catalogue to find out how you could use it in your business
+                    Flip through our e-mark catalogue to find out how you could use it in your business
+                    Flip through our e-mark catalogue to find out how you could use it in your business.</p>
+                  <p class="paraText">Flip through our e-mark catalogue to find out how you could use it in your
+                    business
+                    Flip
+                    through our e-mark catalogue to find <strong class="text-dark">Europen Office Product Award</strong>
+                    out
+                    how you could use
+                    it in your business
+                    Flip through our e-mark catalogue to find out how you could use it in your business
+                    Flip through our e-mark catalogue to find out how you could use it in your business.</p>
+
+                </div>
+              </div>
+            </section>
+            <section class="videoBookSwiper  mt-5 mb-5" data-aos="fade-up" data-aos-duration="1500">
+              <div class="container">
+                <div class="owl-carousel" id="optVideo">
+                  <div class="item">
+                    <video class="video-item" muted loop controls="controls" poster="./dist/assets/img/poster.jpg">
+                      <source src="./dist/assets/img/bannervideo.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item">
+                    <video class="video-item" muted loop controls="controls" poster="./dist/assets/img/poster.jpg">
+                      <source src="./dist/assets/img/bannervideo.mp4" type="video/mp4">
+                    </video>
+                  </div>
+
+                  <div class="item">
+                    <video class="video-item" muted loop controls="controls" poster="./dist/assets/img/poster.jpg">
+                      <source src="./dist/assets/img/bannervideo.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
   <section data-layer="main-video" class="bg-white">
     <div id="shopify-section-main-video" class="shopify-section">
       <div class="video-player bg-black" data-section-id="main-video" data-section-type="banner">
@@ -699,7 +812,6 @@
   <script src="dist/assets/js/vendor/aos.js"></script>
   <script src="dist/assets/js/vendor/FontAwesome.js"></script>
   <!-- build:js -->
-  <script src="assets/js/app.js"></script>
   <!-- endbuild -->
   <script>
     $(document).ready(function () {
@@ -870,6 +982,30 @@
       vid.addEventListener('pause', (event) => {
         vid.pause();
         $('.video-preview-wrapper,.play-toggle').show();
+      });
+
+      var videoSlider = $('#optVideo');
+      videoSlider.owlCarousel({
+        loop: true,
+        margin: 70,
+        nav: true,
+        dots: false,
+        items: 1
+      });
+
+      videoSlider.on('translate.owl.carousel', function (e) {
+        $('.owl-item .item video').each(function () {
+          // pause playing video - after sliding
+          $(this).get(0).pause();
+        });
+      });
+
+      videoSlider.on('translated.owl.carousel', function (e) {
+        // check: does the slide have a video?
+        if ($('.owl-item.active').find('video').length !== 0) {
+          // play video in active slide
+          $('.owl-item.active .item video').get(0).play();
+        }
       });
     });
   </script>
