@@ -7,6 +7,56 @@
     --news-blue: #EBEFF0;
     --grey: #e6e7e9;
     --light-grey: #8b8b8b;
+    --neon: #d2ff64;
+
+}
+
+@font-face {
+    font-family: 'zapf_humanist_601demi';
+    src: url('../fonts/zapfhumanist601bt-demi-webfont.woff2') format('woff2'),
+        url('../fonts/zapfhumanist601bt-demi-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'aileronblack';
+    src: url('../fonts/aileron-black-webfont.woff2') format('woff2'),
+        url('../fonts/aileron-black-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'aileronbold';
+    src: url('../fonts/aileron-bold-webfont.woff2') format('woff2'),
+        url('../fonts/aileron-bold-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'aileronheavy';
+    src: url('../fonts/aileron-heavy-webfont.woff2') format('woff2'),
+        url('../fonts/aileron-heavy-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'aileronlight';
+    src: url('../fonts/aileron-light-webfont.woff2') format('woff2'),
+        url('../fonts/aileron-light-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'aileronregular';
+    src: url('../fonts/aileron-regular-webfont.woff2') format('woff2'),
+        url('../fonts/aileron-regular-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'aileronsemibold';
+    src: url('../fonts/aileron-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/aileron-semibold-webfont.woff') format('woff');
 
 }
 
@@ -49,6 +99,10 @@ h6 {
     font-size: 1.2rem;
 }
 
+.h-100vh {
+    height: 100vh;
+}
+
 .container-fluid-sm {
     padding-left: 120px;
     padding-right: 120px;
@@ -75,6 +129,12 @@ h6 {
     background-color: transparent !important;
     border: 1px solid #2062f4;
     color: #2062f4 !important;
+}
+
+.main_btn.btn_red:hover {
+    background-color: transparent !important;
+    border: 1px solid #FA1616;
+    color: #fff !important;
 }
 
 .head_underline {
@@ -467,7 +527,9 @@ p {
     margin-bottom: 20px;
 }
 
-
+.sec3_box button {
+    font-size: initial;
+}
 
 
 
@@ -527,6 +589,12 @@ p {
 }
 
 
+.main_btn.btn_red {
+    background: #FA1616;
+    border: 1px solid #FA1616;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
 
 .main_btn.btn_blue {
     background: #2062f4;
@@ -1834,6 +1902,268 @@ div[id*='contacts-webchat-'] .text {
 }
 
 /* news section */
+/* m2 glass overlay text */
+.m2GlassText {
+    position: absolute;
+    top: 10%;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+
+}
+
+
+
+.m2GlassText .head_underline {
+    font-size: 1.5rem;
+}
+
+.m2SelectChoose .sec_3 {
+    background: transparent;
+}
+
+.text-white {
+    color: var(--white) !important;
+}
+
+/* m2 glass overlay text */
+/* M2 header */
+.headerM2 .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.headerM2 {
+    background: rgb(0 0 0 / 23%);
+}
+
+/* M2 header */
+/* M2 banner */
+.bannerSectionM2 .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.bannerSectionM2 .swiper-wrapper {
+    height: 676px;
+}
+
+.bannerSectionM2 .swiper-slide {
+    text-align: center;
+    font-size: 1.286rem;
+    background: var(--white);
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 676px;
+}
+
+.bannerSectionM2 .swiper-slide img {
+    height: 100%;
+}
+
+.bannerSectionM2 .x,
+.bannerSectionM2 .y {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.bannerSectionM2 .y {
+    left: 70px;
+}
+
+
+
+.bannerSectionM2 {
+    position: relative;
+}
+
+.m2BannerText {
+    width: 100%;
+    height: 183px;
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.329);
+    bottom: 0;
+    padding: 30px;
+}
+
+.m2BannerText .container {
+    text-align: right !important;
+    color: var(--white);
+}
+
+.m2BannerText h5 {
+    color: var(--white);
+    font-family: 'zapf_humanist_601demi';
+}
+
+/* M2 banner */
+
+.feature-tabs-link.w--current .h-h2__feature-title {
+    color: var(--neon);
+}
+
+.greyRight,
+.greyLeft {
+    padding: 5rem;
+}
+
+.img-container {
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-h2__feature-title {
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 20px;
+    -webkit-transition: color 200ms cubic-bezier(.215, .61, .355, 1);
+    transition: color 200ms cubic-bezier(.215, .61, .355, 1);
+    font-family: aileron, sans-serif;
+    color: #f7f7f7;
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 900;
+    text-align: left;
+    text-transform: uppercase;
+    white-space: normal;
+}
+
+@media screen and (min-width: 1440px) {
+    .h2__section-title {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .small-superscript {
+        font-size: 30px;
+    }
+
+    .h-h2__feature-title {
+        padding-right: 0px;
+        font-size: 28px;
+        white-space: nowrap;
+    }
+}
+
+.body-text {
+    display: block;
+    color: #f7f7f7;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 300;
+    text-align: left;
+}
+
+.h2__section-title--green {
+    display: inline;
+    color: var(--neon);
+}
+
+.small-superscript {
+    font-size: 27px;
+}
+
+.h2__section-title,
+.h3__ul,
+.h3__section-title {
+    display: block;
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-transition: color 200ms ease;
+    transition: color 200ms ease;
+    font-family: 'aileronBlack', sans-serif;
+    color: #f7f7f7;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: normal;
+    margin-bottom: 1rem;
+}
+
+.h3__ul {
+    margin-bottom: 1rem;
+}
+
+.m2Communicator__img {
+    margin-top: 1rem;
+}
+
+.m2Communicator__img img {
+    height: 2rem;
+    margin-right: 1rem;
+
+}
+
+.h3__ul ul {
+    margin: 0;
+    padding: 0px 20px;
+}
+
+.h3__section-title {
+    font-family: 'aileronSemibold', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.h3__ul {
+    font-family: 'aileronSemibold', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--neon);
+}
+
+.h3__ul li {
+    margin-bottom: 0.5rem;
+}
+
+.green {
+    color: var(--neon);
+}
+
+
+
+.m2CommunicatorOne {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/M2bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 2px 3px 36px #000;
+}
+
+.greyRight {
+    background-color: rgba(255, 255, 255, 0.062);
+    height: 100vh;
+    width: 100%;
+}
+
+.m2CommunicatorOne {
+    overflow: hidden;
+}
+
+/* m2 styling */
 @media (min-width: 1025px) {
     #contacts-webchat-footer .contact-webchat-content {
         display: none;
@@ -2002,6 +2332,10 @@ div[id*='contacts-webchat-'] .text {
         width: 130px;
     }
 
+    .greyRight,
+    .greyLeft {
+        padding: 1rem;
+    }
 
 
     .swiper-button-next,
@@ -2029,6 +2363,57 @@ div[id*='contacts-webchat-'] .text {
 }
 
 @media (max-width:767px) {
+    .sectionGlassWhite img {
+        padding-top: 15rem !important;
+    }
+
+    .sectionGlassBlack img {
+        height: 500px
+    }
+
+    .m2GlassText .head_underline {
+        font-size: 1rem;
+    }
+
+    .m2BannerText h5 {
+        font-size: 0.5rem;
+    }
+
+    .m2BannerText {
+        height: 60px;
+        padding: 5px;
+    }
+
+    .bannerSectionM2 .swiper-wrapper,
+    .bannerSectionM2 .swiper-slide {
+        height: 300px;
+    }
+
+
+    .bannerSectionM2 {
+        margin-top: 122px;
+    }
+
+    .headerM2 {
+        background: rgb(0 0 0);
+    }
+
+    .h2__section-title,
+    .h3__ul,
+    .h3__section-title {
+        font-size: 1rem;
+    }
+
+    .greyRight,
+    .greyLeft {
+        padding: 1rem;
+    }
+
+    .img-container {
+        width: 80%;
+        height: 200px;
+    }
+
     .row-grid {
         display: grid;
         flex-wrap: wrap;
