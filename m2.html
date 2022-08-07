@@ -111,7 +111,6 @@
     </nav>
 
   </header>
-  <section class="parralaxSection"></section>
   <section class="bannerSectionM2">
     <div class="m2BannerText">
       <div class="container text-center">
@@ -149,6 +148,7 @@
       </div>
     </div>
   </section>
+  <div class="scrollEffect"></div>
   <section class="m2NewsSection">
     <div class="newsSection mt-5 pt-5">
 
@@ -273,6 +273,8 @@
       </div>
     </div>
   </section>
+  </div>
+  <div class="scrollEffect"></div>
   <section class="m2CommunicatorOne">
     <div class="container-fluid px-0">
       <div class="row">
@@ -320,6 +322,8 @@
 
     </div>
   </section>
+  </div>
+  <div class="scrollEffect"></div>
   <section class="m2CommunicatorOne">
     <div class="container-fluid px-0">
       <div class="row">
@@ -366,6 +370,8 @@
 
     </div>
   </section>
+  </div>
+  <div class="scrollEffect"></div>
   <section class="m2CommunicatorOne">
     <div class="container-fluid px-0">
       <div class="row">
@@ -412,6 +418,8 @@
 
     </div>
   </section>
+  </div>
+  <div class="scrollEffect"></div>
   <section class="m2CommunicatorOne">
     <div class="container-fluid px-0">
       <div class="row">
@@ -459,6 +467,8 @@
 
     </div>
   </section>
+  </div>
+  <div class="scrollEffect"></div>
   <section data-layer="main-video" class="bg-white">
     <div id="shopify-section-main-video" class="shopify-section">
       <div class="video-player bg-black" data-section-id="main-video" data-section-type="banner">
@@ -488,6 +498,8 @@
 
     </div>
   </section>
+  </div>
+  <div class="scrollEffect"></div>
   <section class="sectionGlassWhite position-relative" data-aos="fade-up" data-aos-duration="1500">
     <div class="m2GlassText">
       <div class="sec2_right">
@@ -522,6 +534,8 @@
       </div>
     </div>
   </section>
+  </div>
+  <div class="scrollEffect"></div>
   <div class="parallaxThree focus">
     <section class="sectionGlassBlack position-relative">
       <div class="m2GlassText" data-aos="fade-up" data-aos-duration="1000">
@@ -537,7 +551,9 @@
       </div>
     </section>
   </div>
+  </div>
 
+  <div class="scrollEffect"></div>
   <div class="cover-container">
     <div class="container" id="about" style="overflow:hidden">
       <div class="row aaa">
@@ -567,7 +583,9 @@
       </div>
     </div>
   </div>
+  </div>
 
+  <div class="scrollEffect"></div>
   <section class="sectionFour">
     <div class="container-fluid">
       <div class="row">
@@ -575,6 +593,8 @@
       </div>
     </div>
   </section>
+  </div>
+  <div class="scrollEffect"></div>
   <section class="newsSection spacing">
     <section class="sec_2">
       <div class="container-fluid text-center">
@@ -631,6 +651,8 @@
       </div>
     </section>
   </section>
+  </div>
+  <div class="scrollEffect"></div>
   <section class="sectionFour">
     <div class="container-fluid">
       <div class="row">
@@ -638,6 +660,8 @@
       </div>
     </div>
   </section>
+  </div>
+  <div class="scrollEffect"></div>
   <section class="m2SelectChoose" style="overflow:hidden">
     <section class="sec_3" id="choose">
       <div class="container text-center">
@@ -697,7 +721,9 @@
         </div>
     </section>
   </section>
+  </div>
   <!-- Site footer -->
+  <div class="scrollEffect"></div>
   <footer class="site-footer position-relative">
     <div class="container-fluid ">
       <div id="contacts-webchat-footer" class="mb-3 contacts-webchat onready desktop row">
@@ -817,6 +843,7 @@
     </div>
     <div class="scrollTo" style="display: none"><span class="fa fa-angle-left"></span></div>
   </footer>
+  </div>
 
 
   <!-- Bootstrap core JavaScript
@@ -830,6 +857,9 @@
   <script src="dist/assets/js/vendor/video.min.js"></script>
   <script src="dist/assets/js/vendor/aos.js"></script>
   <script src="dist/assets/js/vendor/FontAwesome.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
+    integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
+    crossorigin="anonymous"></script>
   <!-- build:js -->
   <!-- endbuild -->
   <script>
@@ -1002,6 +1032,23 @@
         vid.pause();
         $('.video-preview-wrapper,.play-toggle').show();
       });
+      if (!(/Android|webOS|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i.test(navigator.userAgent))) { //if not these devices(userAgents)
+
+        $.scrollify({
+          section: ".scrollEffect",
+          interstitialSection: ".footer",
+          easing: "easeOutExpo",
+          scrollSpeed: 900,
+          offset: 0,
+          scrollbars: true,
+          standardScrollElements: ".feature-hidden-text-wrapper",
+          setHeights: false,
+          overflowScroll: false,
+          updateHash: false,
+          touchScroll: true,
+        });
+
+      }
     });
   </script>
 </body>
