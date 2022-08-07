@@ -1935,6 +1935,10 @@ div[id*='contacts-webchat-'] .text {
 
 /* news section */
 /* m2 glass overlay text */
+.bannerSectionM2 {
+    margin-top: 65px;
+}
+
 .m2GlassText {
     text-align: center;
     padding-top: 100px;
@@ -2176,12 +2180,17 @@ div[id*='contacts-webchat-'] .text {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 1px 2px 3px 36px #000;
+    margin-top: 60px;
 }
 
 .greyRight {
     background-color: rgba(255, 255, 255, 0.062);
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
 .m2CommunicatorOne {
