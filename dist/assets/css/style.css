@@ -663,6 +663,7 @@ p {
     border: 1px solid #FA1616;
     font-size: 1rem;
     padding: 5px 10px;
+    color: #fff !important;
 }
 
 .main_btn.btn_blue {
@@ -850,12 +851,35 @@ img.box-image {
 }
 
 #owl-carousel2 .item:hover .product-detail,
-#innerBookCarousel .item:hover .product-detail {
+#innerBookCarousel .item:hover .product-detail,
+.productCarousel .item_s4:hover .hover-detail {
     opacity: 1;
+}
+
+.productCarousel .item_s4 {
+    cursor: pointer;
 }
 
 .product-detail p {
     color: var(--white);
+}
+
+.hover-detail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    text-align: center;
+    top: 0px;
+    color: var(--white);
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 1;
 }
 
 .product-detail {
@@ -873,6 +897,7 @@ img.box-image {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    z-index: 1;
 }
 
 /*owl carouel arrows */
@@ -1388,7 +1413,7 @@ div[id*='contacts-webchat-'].onchat #contacts-webchat-tabs .chat {
     -webkit-box-align: center;
     width: 100%;
     padding: 19px;
-    font-size: 1.714rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -1412,14 +1437,18 @@ div[id*='contacts-webchat-'].onchat button {
     display: block;
     background-color: #000;
     min-width: 164px;
-    border: 2px solid var(--white);
+    border: 1px solid #eee;
     padding: 9px 20px;
     border-radius: 8px;
     margin: 13px auto;
     color: var(--white);
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.helpText {
+    font-size: 1rem;
 }
 
 div[id*='contacts-webchat-'] .text {
@@ -1482,7 +1511,10 @@ div[id*='contacts-webchat-'] .text {
     align-items: center;
     min-height: 250px;
     max-height: 250px;
+    cursor: pointer;
 }
+
+
 
 /* product carousel */
 
@@ -1958,6 +1990,19 @@ div[id*='contacts-webchat-'] .text {
     border: none;
 }
 
+.updatedSectionPromotion .sec_3 .EngagementActive {
+    overflow-y: auto;
+    max-height: 400px;
+    min-height: 400px;
+    display: flex;
+}
+
+.updatedSectionPromotion .sec_3 .EngagementActive p {
+    font-size: 16px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
 /* updated section promotion */
 .insidecontainermiddlepage p {
 
@@ -2043,8 +2088,11 @@ div[id*='contacts-webchat-'] .text {
 
 .m2GlassText {
     text-align: center;
-    padding-top: 65px;
     width: 100%;
+}
+
+.sectionGlassBlack {
+    padding-top: 150px;
 }
 
 .m2GlassText .head_underline {
@@ -2114,9 +2162,14 @@ div[id*='contacts-webchat-'] .text {
 .scrollEffect #shopify-section-main-video,
 .scrollEffect .sectionGlassWhite,
 .scrollEffect .cover-container,
-.scrollEffect .newsSection {
+.scrollEffect .m2NewsSection,
+.scrollEffect .newsSectionFullHeight {
     height: 100vh;
     max-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .bannerSectionM2 .x,
