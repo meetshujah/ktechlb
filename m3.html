@@ -886,10 +886,7 @@
         
 
         }
-
-        e.preventDefault();
-      });
-      $('#scrollOwlSlider').on('change.owl.carousel', function (e) {
+        $('#scrollOwlSlider').on('change.owl.carousel', function (e) {
         if (e.namespace && e.property.name === 'position'
           && e.relatedTarget.relative(e.property.value) === e.relatedTarget.items().length - 1) {
           $('html, body').animate({
@@ -897,6 +894,9 @@
           }, 0);
         }
       });
+        e.preventDefault();
+      });
+     
     });
   </script>
 </body>
