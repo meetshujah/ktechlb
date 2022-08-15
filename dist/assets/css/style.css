@@ -2544,6 +2544,11 @@ div[id*='contacts-webchat-'] .text {
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1500px) {
+    
+div#scrollOwlSlider img {
+    width: 600px;
+    margin: 0 auto;
+}
     .c-card {
         right: 100px;
     }
