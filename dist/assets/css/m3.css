@@ -120,7 +120,7 @@
 
   .hero-title,
   .hero-subtitle {
-    font-family: 'montserrat';
+    font-family: 'montserrat-regular';
   }
 
 
@@ -3158,7 +3158,7 @@
   @media screen and (max-height: 880px) and (min-width: 567px) {
     .meet-common-text[data-v-153fe206] .common-text--h2 {
       font-size: 42px !important;
-      font-family: 'montserrat';
+      font-family: 'montserrat-regular';
     }
   }
 
@@ -3824,7 +3824,7 @@
   input,
   select,
   textarea {
-    font-family: 'montserrat';
+    font-family: 'montserrat-regular';
     font-synthesis: none;
     -moz-font-feature-settings: "kern";
     -webkit-font-smoothing: antialiased;
@@ -5798,7 +5798,7 @@
   }
 
   html {
-    font-family: 'montserrat';
+    font-family: 'montserrat-regular';
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-size: 16px;
@@ -7684,4 +7684,35 @@
 
 .videoIconM3{
     cursor:pointer;
+}
+.swiper-slide.scroll-slide img {
+  height: auto;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+}
+.scroll-text-below{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.8;
+  font-family: 'montserrat-regular';
+}
+.scroll-text-right{
+  width: 500px;
+}
+.scroll-text-bold{
+  font-weight: bolder;
+  font-size:40px;
+}
+.scroll-text-h3{
+  opacity: 0.8;
+  font-size:20px;
+  font-family: 'montserrat-regular';
+}
+.sticky-section{
+  position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
