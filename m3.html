@@ -249,7 +249,7 @@
       <div id="intelligent_framing" class="section-screen-text-wrapper section-screen-text-wrapper--dark-flow"
         data-v-6fd0f91b="" data-v-153fe206="">
         <div class="bg-area-osbot" data-v-6fd0f91b="">
-          <div class="section-screen-text backgroundApplyKid height-100vh" data-v-6fd0f91b="">
+          <div class="section-screen-text backgroundApplyKid height-100vh h-100vh" data-v-6fd0f91b="">
 
             <div class="darker-bg" data-v-6fd0f91b=""></div>
             <div class="container w1200" data-v-6fd0f91b="">
@@ -271,8 +271,8 @@
             <div class="dark-flow-up__dark" data-v-6fd0f91b=""></div>
           </div>
         </div>
-        <section class="  mt-5 mb-5">
-          <div class="container">
+        <section class="h-100vh">
+          <div class="container w1200">
             <div class="owl-carousel" id="scrollOwlSlider">
               <div class="item">
                 <div class="container w1200" data-v-4c27d85c="">
@@ -293,7 +293,7 @@
                 <img src="./dist/assets/img/slide1.PNG" />
               </div>
               <div class="item">
-                <div class="container w1200" data-v-4c27d85c="">
+               
                   <div class="text-wrapper" data-v-4c27d85c="" data-aos-easing="linear" data-aos="fade-up"
                     data-aos-duration="1500">
                     <div data-v-4c27d85c="">
@@ -307,11 +307,11 @@
                       </div>
                     </div>
                   </div>
-                </div>
+               
                 <img src="./dist/assets/img/slide2.PNG" />
               </div>
               <div class="item">
-                <div class="container w1200" data-v-4c27d85c="">
+               
                   <div class="text-wrapper" data-v-4c27d85c="" data-aos-easing="linear" data-aos="fade-up"
                     data-aos-duration="1500">
                     <div data-v-4c27d85c="">
@@ -325,11 +325,11 @@
                       </div>
                     </div>
                   </div>
-                </div>
+              
                 <img src="./dist/assets/img/slide1.PNG" />
               </div>
               <div class="item">
-                <div class="container w1200" data-v-4c27d85c="">
+               
                   <div class="text-wrapper" data-v-4c27d85c="" data-aos-easing="linear" data-aos="fade-up"
                     data-aos-duration="1500">
                     <div data-v-4c27d85c="">
@@ -342,7 +342,7 @@
                           the image will auto track your face and adjust accurately for your actual situation.</p>
                       </div>
                     </div>
-                  </div>
+                 
                 </div>
                 <img src="./dist/assets/img/slide2.PNG" />
               </div>
@@ -856,7 +856,6 @@
         loop: true,
         nav: false,
         dots: false,
-        transitionStyle: "fade",
         margin: 0,
         responsive: {
           0: {
@@ -876,15 +875,15 @@
       owl.on('mousewheel', '.owl-stage', function (e) {
 
         if (e.deltaY > 0) {
-          setTimeout(function () {
+       
             owl.trigger('next.owl');
-          }, 500)
+       
 
         }
         else {
-          setTimeout(function () {
+       
             owl.trigger('prev.owl');
-          }, 500)
+        
 
         }
 
