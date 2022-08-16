@@ -7685,12 +7685,12 @@
 .videoIconM3{
     cursor:pointer;
 }
-.swiper-slide.scroll-slide img,.swiper-slide.scroll-slide video  {
+.swiper-slide.scroll-slide img, .swiper-slide.scroll-slide video {
   height: auto;
-  width: 600px;
-  margin: 0 auto;
+  width: 60%;
   text-align: center;
   display: flex;
+  margin: 0 auto;
 }
 .scroll-text-below{
   display: flex;
