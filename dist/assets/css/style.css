@@ -97,9 +97,7 @@
 
 }
 
-html {
-    scroll-behavior: smooth;
-}
+html {}
 
 
 body {
@@ -108,6 +106,7 @@ body {
     font-size: 14px;
     font-weight: normal;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .generalDetailSection ::marker {
@@ -265,7 +264,8 @@ ul.navbar-nav li a {
 }
 
 /* override bootstrap classess */
-.insidecontainermiddlepage 
+.insidecontainermiddlepage
+
 /* slider banner */
 .bannerSection .swiper-container {
     width: 100%;
@@ -312,7 +312,7 @@ ul.navbar-nav li a {
 }
 
 .book {
-    right: 13%;
+    right: 10%;
     content: url(../img/book2.png);
     position: absolute;
     z-index: 3;
@@ -369,20 +369,17 @@ ul.navbar-nav li a {
 
 
 .swiper-button-next {
-    background-image: url(../img/rightArrow.JPG);
-    right: 0;
+    background: url(../img/fs.prevnext.png) -45px -45px no-repeat transparent;
 }
 
 .swiper-button-prev {
-    background-image: url(../img/leftArrow.JPG);
-    left: 0;
+    background: url(../img/fs.prevnext.png) -0px -45px no-repeat transparent;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    background-size: contain;
-    width: 53px;
-    height: 130px;
+    width: 45px;
+    height: 45px;
     transform: translateY(-50%);
 }
 
@@ -400,10 +397,11 @@ ul.navbar-nav li a {
 /* section Four parallax */
 .parallaxOne {
     background: url(../img/M1.jpg);
-    height: 64vh;
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -422,7 +420,7 @@ ul.navbar-nav li a {
     height: 59vh;
     width: 100vw;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
@@ -617,7 +615,7 @@ p {
     -o-transition: .5s ease;
     transition: .5s ease;
     background: var(--white);
-    /* padding-top: 80px; */
+    border-radius: 0px !important;
 }
 
 .sec3_box img {
@@ -887,7 +885,8 @@ img.box-image {
 #owl-carousel2 .item:hover .product-detail,
 #innerBookCarousel .item:hover .product-detail,
 .productCarousel .item_s4:hover .hover-detail {
-    opacity: 1;
+    opacity: 0.6;
+    box-shadow: 0px 2px 10px #0000000d;
 }
 
 .productCarousel .item_s4 {
@@ -903,7 +902,7 @@ img.box-image {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.6);
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     top: 0px;
     color: var(--white);
@@ -1527,10 +1526,10 @@ div[id*='contacts-webchat-'] .text {
 }
 
 /* product carousel */
-.productCarousel img {
-    height: 30px !important;
-    width: 30px !important;
-    margin-bottom: 10px !important;
+.productCarousel .sec3_box img {
+    min-height: 60px !important;
+    width: 60px !important;
+    /* margin-bottom: 16px !important; */
     margin: 0 auto;
 }
 
@@ -1546,8 +1545,9 @@ div[id*='contacts-webchat-'] .text {
     min-height: 131px;
     max-height: 131px;
     cursor: pointer;
+    gap: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
