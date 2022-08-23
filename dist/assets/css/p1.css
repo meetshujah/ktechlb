@@ -1,0 +1,396 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#introNav .nav-item .btn {
+    border-radius: 3px !important;
+    margin-top: 4px;
+    font-family: 'FuturaPTBold';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.section.bg {
+    padding-bottom: 0;
+}
+
+.section.s-2 {
+    background: #eee;
+}
+
+.section {
+    width: 100%;
+    position: relative;
+    padding-bottom: 48.4%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.section .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.section.s-2 .content {
+    position: relative;
+}
+
+.section .focus {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.section .focus .images,
+.section .focus .images .image {
+    position: absolute;
+    top: 0px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+}
+
+.section .focus .images {
+    width: 50%;
+    z-index: 500;
+}
+
+.section.s-2 .focus .images .image.focus-01 {
+    /* background-image: url(../images/sound2-1.png);*/
+    z-index: 400;
+}
+
+.section.s-2 .focus .images .image.focus-02 {
+    /*background-image: url(../images/2-2.png);*/
+    z-index: 300;
+}
+
+.section.s-2 .focus .images .image.focus-03 {
+    /*background-image: url(../images/2-3.png);*/
+    z-index: 200;
+}
+
+.section .focus .images .image {
+    width: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 50% center;
+    overflow: hidden;
+}
+
+.section .intro.right {
+    width: 50%;
+    float: right;
+    margin-right: 1%;
+}
+
+.section .intro {
+    width: 100%;
+}
+
+.section .focus .text-box {
+    max-width: 100%;
+}
+
+.section .focus .text {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.pa-ty2 .text>h2 {
+    font-size: 26px;
+    font-weight: 100;
+    line-height: 1.4em;
+    margin-bottom: 0.4em;
+}
+
+section.w-bg h2 {
+    color: #333;
+}
+
+section .intro.left .text>p,
+section .intro.right .text>p {
+    text-align: left;
+}
+
+.pa-ty2 .text>p {
+    font-size: 16px;
+    line-height: 1.5em;
+    max-width: 50%;
+    margin: auto;
+}
+
+section.w-bg p {
+    color: #666;
+}
+
+.section p {
+    font-size: 12px;
+}
+
+section .icon .table-box {
+    display: table;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section .icon .table-row {
+    display: table-row;
+}
+
+section .icon .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+section .icon .cell {
+    padding: 10px 18px;
+}
+
+section .icon .cell img {
+    /* height: 50%; */
+    height: 75px;
+    margin: auto;
+}
+
+img {
+    display: block;
+    overflow: hidden;
+}
+
+.section .focus .images.fixed {
+    position: fixed;
+    /* width: calc(50% - 30px); */
+}
+
+.section .content.C {
+    top: 50%;
+}
+
+.section .intro.left {
+    width: 50%;
+    float: left;
+    margin-left: 3%;
+}
+
+.section .content.C .C {
+    transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+}
+
+.section .content.C .T {
+    top: -50%;
+}
+
+.section .show.right {
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+
+.section .content.C .T {
+    top: -50%;
+}
+
+.section .show.right {
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+
+
+
+.mobile .show .show-box img {
+    width: 100%;
+    margin: auto;
+}
+
+img.full-img {
+    width: 100%;
+}
+
+.mobile .intro {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.productdetailsoption3_template .mobile .intro {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 320px) {
+    .desktop {
+        display: none
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+
+}
+
+
+
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+    .pa-ty2 .text h2 {
+        font-size: 32px;
+    }
+
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+
+    .pa-ty2 .text h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    .caption {
+        font-size: 20px;
+        padding: 10px 15px;
+        left: 35%;
+    }
+
+    .pa-ty2 .text h2 {
+        font-size: 27px;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {}
+
+/*.test1{height: 970px!important;}*/
+.focus-01 {
+    height: 100vh !important;
+}
+
+body {
+    background: #eee;
+}
+
+.productOverlayBgImg {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    opacity: 0.25;
+}
+
+.fontStyle {
+    font-family: Cursive !important;
+    text-align: left !important;
+}
+
+.werwer {
+    padding-bottom: 35px !important;
+    margin-bottom: 15px !important;
+    background: transparent url('https://ktechlb.com//uploads/products/werwer.png') bottom left 0px / 92px no-repeat !important;
+}
+
+.flexLeftAlign {
+    align-items: start;
+}
+
+.main-title h1 {
+    font-size: 46px !important;
+}
+
+.main-title p {
+    font-size: 18px !important;
+}
+
+.ml-265 {
+    margin-left: 265px !important;
+}
+
+.font45 {
+    font-size: 46px !important;
+}
+
+.font18 {
+    font-size: 18px !important;
+}
+
+.c-cardP1 {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blog-archive h1,
+.blog-archive h2,
+.blog-archive p {
+    font-family: 'montserrat-regular' !important;
+}
+
+.blog-archive.p1-blog-archive .ba-item-button-container {
+
+
+    top: initial;
+    bottom: 34px;
+}
+
+.blog-archive.p1-blog-archive .ba-item-button-container::after {
+
+    border-right: 1.5625rem solid transparent;
+    border-left: 1.5625rem solid transparent;
+    border-bottom: 1.5625rem solid #e1e1e1;
+    bottom: 0px;
+    border-top: none;
+}
+
+.blog-archive.p1-blog-archive .ba-item-link:hover .ba-item-button-container::after {
+
+    display: none;
+}
+
+.blog-archive.p1-blog-archive .ba-item-link:hover .ba-item-button-container {
+    bottom: 23px;
+}

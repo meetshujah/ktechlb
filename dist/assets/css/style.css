@@ -97,6 +97,11 @@
 
 }
 
+@font-face {
+    font-family: 'Cursive';
+    src: url('../fonts/cursive.woff2') format('woff2')
+}
+
 html {}
 
 
@@ -1210,6 +1215,10 @@ li.inner-dropdown a {
     font-size: 0.643rem !important;
     color: var(--white);
     font-family: 'montserrat-light';
+
+}
+
+.xs-copyright-text p img {
     display: none;
 
 }
@@ -2963,7 +2972,7 @@ div[id*='contacts-webchat-'] .text {
     /* max-width: none; */
     height: 518px;
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .blog-archive .ba-item {
@@ -3096,8 +3105,8 @@ div[id*='contacts-webchat-'] .text {
     .blog-archive .ba-content.masonry {
         margin-left: auto;
         margin-right: auto;
-        max-width: 67.5rem;
-        width: calc(100% - 6rem);
+        max-width: 90%;
+        width: 90%;
     }
 }
 
@@ -3112,15 +3121,7 @@ div[id*='contacts-webchat-'] .text {
         text-align: left;
     }
 
-    .blog-archive .ba-content.masonry .ba-item {
-        /* margin: 0; */
-    }
 
-    .blog-archive .ba-item {
-        /* margin: 0 1% 2%; */
-        /* max-width: 21.875rem; */
-        /* width: calc(50% - 0.625rem); */
-    }
 
     .blog-archive .ba-hero {
         justify-content: flex-start;

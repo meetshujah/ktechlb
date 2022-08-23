@@ -1,0 +1,105 @@
+@media screen and (min-width: 600px) and (max-width: 899px) {
+	/*----------------new product---------------*/
+	.new-products-box {
+		padding: 30px 0;
+	}
+	.new-products-box h2 {
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.new-products {
+		margin-top: 20px;
+	}
+	.new-products h3 {
+		font-size: 22px;
+		line-height: 22px;
+		margin-bottom: 14px;
+	}
+	.new-products p {
+		font-size: 16px;
+		line-height: 16px;
+	}
+	/*左侧*/
+	.product-left {
+		margin-bottom: 14px;
+		padding: 20px 0;
+	}
+	.product-left p {
+		margin-bottom: 12px;
+	}
+	/*右侧*/
+	.product-right-top {
+		margin-bottom: 10px;
+	}
+	.product-right .product-right-con {
+		padding-left: 1rem;
+	}
+	.product-right-con .right-con-txt {
+		width: 50%;
+		padding-left: 1rem;
+	}
+	/*--------------- 商用解决方案 --------------*/
+	.solutions-title img {
+		width: 30%;
+		margin: 0 auto 20px;
+	}
+	.solutions-title h2 {
+		font-size: 24px;
+		line-height: 24px;
+		margin-bottom: 16PX;
+	}
+	.solutions-title p {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: .083rem;
+		padding: 0 20px;
+	}
+	.list-no-hover h3,
+	.list-no-hover-en h3 {
+		font-size: 24px;
+		line-height: 24px;
+		margin-bottom: 16px;
+		padding-top: 1.7rem;
+	}
+	.list-no-hover img,
+	.list-no-hover-en img {
+		width: 5%;
+	}
+	.list-hover p {
+		font-size: 16px;
+		line-height: 16px;
+		margin-top: 10px;
+	}
+	.list-hover img {
+		width: 5%;
+	}
+	.list-hover a {
+		width: 18%;
+		height: 30px;
+		line-height: 30px;
+		margin: 20px auto 0;
+		border-radius: 15px;
+		font-size: 14px !important;
+	}
+	/*----------------柔性+技术----------------*/
+	.flex-box {
+		padding: 20px 0px;
+	}
+	.flex-box h2 {
+		font-size: 24px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+	.flex-box .flex-display {
+		margin-bottom: 10px;
+	}
+	.flex-box h3 {
+		font-size: 24px;
+		line-height: 24px;
+		margin-bottom: 16px;
+	}
+	.flex-box p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
