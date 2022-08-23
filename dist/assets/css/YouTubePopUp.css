@@ -14,18 +14,18 @@
     Copyright (c) 2016 - Qassim Hassan
 */
 
-.YouTubePopUp-Wrap{
-    position:fixed;
-    width:100%;
-    height:100%;
-    background-color:#000;
-    background-color:rgba(0,0,0,0.8);
-    top:0;
-    left:0;
-    z-index:9999999999999;
+.YouTubePopUp-Wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 9999999999999;
 }
 
-.YouTubePopUp-animation{
+.YouTubePopUp-animation {
     opacity: 0;
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
@@ -55,15 +55,16 @@
     }
 }
 
-body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
-    top:32px;
-    z-index:99998;
+body.logged-in .YouTubePopUp-Wrap {
+    /* For WordPress */
+    top: 32px;
+    z-index: 99998;
 }
 
-.YouTubePopUp-Content{
-        max-width: 80%;
+.YouTubePopUp-Content {
+    max-width: 80%;
     width: 100%;
-    padding: 20px!important;
+    padding: 20px !important;
     display: block;
     margin: auto;
     height: 80%;
@@ -74,9 +75,9 @@ body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
     bottom: 0;
 }
 
-.YouTubePopUp-Content iframe{
+.YouTubePopUp-Content iframe {
     max-width: 100% !important;
-    height: 100%!important;
+    height: 100% !important;
     /* max-height: 100%!important; */
     width: 100% !important;
     display: block !important;
@@ -91,7 +92,7 @@ body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
     padding: 20px;
 }
 
-.YouTubePopUp-Hide{
+.YouTubePopUp-Hide {
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
     -webkit-animation-fill-mode: both;
@@ -120,48 +121,49 @@ body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
     }
 }
 
-.YouTubePopUp-Close{
+.YouTubePopUp-Close {
     position: absolute;
-    top: -5px;
-    cursor: pointer!important;
+    top: -16px;
+    cursor: pointer !important;
     bottom: 528px;
     right: 22px;
-    margin: 0;
+    margin: 6px;
+    outline: 6px solid red;
     width: 24px;
     height: 24px;
-    background:url(close.png) no-repeat;
-    background-size:24px 24px;
-    -webkit-background-size:24px 24px;
-    -moz-background-size:24px 24px;
-    -o-background-size:24px 24px;
+    background: red url(close.png) no-repeat;
+    background-size: 24px 24px;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    -o-background-size: 24px 24px;
 }
 
-.YouTubePopUp-Close:hover{
-    opacity:0.5;
+.YouTubePopUp-Close:hover {
+    opacity: 0.5;
 }
 
-@media all and (max-width: 768px) and (min-width: 10px){
-    .YouTubePopUp-Content{
-        max-width:90%;
+@media all and (max-width: 768px) and (min-width: 10px) {
+    .YouTubePopUp-Content {
+        max-width: 90%;
     }
 }
 
-@media all and (max-width: 600px) and (min-width: 10px){
-    .YouTubePopUp-Content iframe{
-        height:320px !important;
+@media all and (max-width: 600px) and (min-width: 10px) {
+    .YouTubePopUp-Content iframe {
+        height: 320px !important;
     }
 
-    .YouTubePopUp-Close{
-        bottom:362px;
+    .YouTubePopUp-Close {
+        bottom: 362px;
     }
 }
 
-@media all and (max-width: 480px) and (min-width: 10px){
-    .YouTubePopUp-Content iframe{
-        height:220px !important;
+@media all and (max-width: 480px) and (min-width: 10px) {
+    .YouTubePopUp-Content iframe {
+        height: 220px !important;
     }
 
-    .YouTubePopUp-Close{
-        bottom:262px;
+    .YouTubePopUp-Close {
+        bottom: 262px;
     }
 }
