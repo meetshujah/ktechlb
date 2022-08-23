@@ -511,7 +511,7 @@
       </section>
     </div>
   </div>
-  <Div class="blog-archive">
+  <div class="blog-archive">
     <div class="ba-hero">
       <header class="section-header text-center" data-aos-easing="linear" data-aos="fade-up" data-aos-duration="1000">
         <h2 class="section-title">News and recent articles</h2>
@@ -520,9 +520,9 @@
 
     </div>
     <div class="ba-content masonry" data-aos-easing="linear" data-aos="fade-up" data-aos-duration="2000">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-4 col-sm-4 col-12">
+          <div class="col-lg-3 col-sm-3 col-12">
             <article class="ba-item pa-item">
               <a href="./dist/assets/pdf/sample.pdf" class="ba-item-link" target="_blank">
                 <h1 class="ba-item-title">CE Markt, DE, 04/2021</h1>
@@ -533,7 +533,7 @@
               </a>
             </article>
           </div>
-          <div class="col-lg-4 col-sm-4 col-12">
+          <div class="col-lg-3 col-sm-3 col-12">
             <article class="ba-item pa-item">
               <a href="./dist/assets/pdf/sample.pdf" class="ba-item-link" target="_blank">
                 <h1 class="ba-item-title">CE Markt, DE, 04/2021</h1>
@@ -544,7 +544,18 @@
               </a>
             </article>
           </div>
-          <div class="col-lg-4 col-sm-4 col-12">
+          <div class="col-lg-3 col-sm-3 col-12">
+            <article class="ba-item pa-item">
+              <a href="./dist/assets/pdf/sample.pdf" class="ba-item-link" target="_blank">
+                <h1 class="ba-item-title">CE Markt, DE, 04/2021</h1>
+                <img src="./dist/assets/img/CE-Markt-04_2021-pdf-450x450.jpg.webp" />
+                <div class="ba-item-button-container pa-item-button-container">
+                  <span class="button light">Open</span>
+                </div>
+              </a>
+            </article>
+          </div>
+          <div class="col-lg-3 col-sm-3 col-12">
             <article class="ba-item pa-item">
               <a href="./dist/assets/pdf/sample.pdf" class="ba-item-link" target="_blank">
                 <h1 class="ba-item-title">CE Markt, DE, 04/2021</h1>
@@ -556,10 +567,25 @@
             </article>
           </div>
         </div>
+        <div class="row">
+          <div class="col-12 mx-auto text-center">
+            <div class="mb-4">
+              <button class="main_btn btn_blue">Show More</button>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
-  </Div>
+  </div>
+  <section class="sectionFour">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="parallaxTwo focus"></div>
+      </div>
+    </div>
+  </section>
   <!-- Site footer -->
   <div class="">
     <footer class="site-footer position-relative">
@@ -800,7 +826,7 @@
       }
 
 
-      AOS.init();
+
       $('#owl-carousel').owlCarousel({
         loop: true,
         autoplay: true,
@@ -889,7 +915,7 @@
         effect: 'fadeInSlide',
       });
 
-
+      AOS.init();
 
     });
   </script>
