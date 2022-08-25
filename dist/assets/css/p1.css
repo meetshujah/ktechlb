@@ -618,6 +618,7 @@ body {
     text-transform: uppercase;
     font-family: "Microsoft YaHei";
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .entry-title {
@@ -738,4 +739,18 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+
+
+    .ml-265 {
+        margin-left: 50px !important;
+        z-index: 1;
+        position: relative;
+    }
+
+    .p1Card img {
+        height: 600px;
+    }
 }
