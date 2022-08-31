@@ -1928,7 +1928,8 @@ div[id*='contacts-webchat-'] .text {
     background: url('../img/newsBanner.jpg') !important;
     background-size: cover !important;
     height: 550px;
-    margin-top: 85px;
+    /* margin-top: 85px; */
+    margin-top: 47px;
 }
 
 

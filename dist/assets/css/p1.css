@@ -403,7 +403,7 @@ body {
     padding-bottom: 100px;
 }
 
-.card {
+.widgetsLinks .card {
     align-items: flex-start;
     background: #fff;
     border: 1px solid #d2d2d2;
@@ -418,7 +418,7 @@ body {
     width: 200px;
 }
 
-.card.cover .c-image {
+.widgetsLinks .card.cover .c-image {
     height: 40px;
     left: 0;
     -o-object-fit: cover;
@@ -430,21 +430,21 @@ body {
     width: 100%;
 }
 
-.card .c-image {
+.widgetsLinks .card .c-image {
     display: block;
     height: 12.6875rem;
     margin: 0 auto;
     max-width: none;
 }
 
-.card .c-image,
-.card .c-imprint {
+.widgetsLinks .card .c-image,
+.widgetsLinks .card .c-imprint {
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
 }
 
-.card .c-title {
+.widgetsLinks .card .c-title {
     align-items: center;
     background-color: var(--brand-secondary);
     bottom: 0;
@@ -464,7 +464,7 @@ body {
     width: 100%;
 }
 
-.card .c-title-text {
+.widgetsLinks .card .c-title-text {
     align-items: center;
     display: inline-flex;
     justify-content: center;
@@ -477,7 +477,7 @@ body {
     color: #fff;
 }
 
-.card .c-button {
+.widgetsLinks .card .c-button {
     left: 50%;
     opacity: 0;
     position: absolute;
@@ -504,7 +504,7 @@ body {
     transition: .4s;
 }
 
-.card .c-title::before {
+.widgetsLinks .card .c-title::before {
     display: inline-block;
     height: 0;
     width: 0;
@@ -519,12 +519,12 @@ body {
     top: -1.4375rem;
 }
 
-.card:hover .c-title {
+.widgetsLinks .card:hover .c-title {
     padding-bottom: 25%;
     top: 0;
 }
 
-.card:hover .c-button {
+.widgetsLinks .card:hover .c-button {
     opacity: 1;
 }
 
