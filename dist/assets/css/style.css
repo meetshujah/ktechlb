@@ -187,7 +187,7 @@ h6 {
 }
 
 h3.head_underline_small {
-    font-size: 1rem;
+    font-size: 12px;
     color: #2c3749;
     font-weight: 600;
 }
@@ -223,8 +223,8 @@ nav .dropdown>.dropdown-toggle:active {
 }
 
 .navbar-dark .navbar-brand {
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .navbar-dark .navbar-brand img {
@@ -238,7 +238,7 @@ nav .dropdown>.dropdown-toggle:active {
 }
 
 ul.navbar-nav li a {
-    padding: 0.6rem 1rem !important;
+    padding: 0.8rem 1rem !important;
 }
 
 .nav-link,
@@ -312,7 +312,7 @@ ul.navbar-nav li a {
 .bannerSection {
     position: relative;
     /* margin-top: 85px; */
-    margin-top: 47px;
+    margin-top: 37px;
 }
 
 .book {
@@ -323,6 +323,11 @@ ul.navbar-nav li a {
     bottom: -100px;
     width: 277px;
     transform: translate(-2%, -6%);
+    transition: all 0.5s ease 0s;
+}
+
+.book:hover {
+    transform: scale(1.1);
 }
 
 .setTextPosition {
@@ -400,13 +405,16 @@ ul.navbar-nav li a {
 /* banner section */
 /* section Four parallax */
 .parallaxOne {
-    background: url(../img/M1.jpg);
-    height: 630px;
+    background: url(../img/girl.png);
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom;
+    background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    background-position: center top;
 }
 
 .parallaxOneFullHeight {
@@ -421,12 +429,15 @@ ul.navbar-nav li a {
 
 .parallaxTwo {
     background: url(../img/bg.png);
-    height: 630px;
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom;
+    background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    background-position: center top;
 }
 
 .parallaxTwoFullHeight {
@@ -441,22 +452,28 @@ ul.navbar-nav li a {
 
 .parallaxGlass {
     background: url(../img/M2GlassBlack.jpg);
-    height: 630px;
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom;
+    background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    background-position: center top;
 }
 
 .parallaxThree {
     background: url(../img/M2GlassBlack.jpg);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    min-height: 700px;
+    background-position: center top;
 }
 
 /* section Four parallax */
@@ -746,6 +763,7 @@ p {
 .ebarkSection .sec2_right p {
     color: #525252;
     font-weight: 400;
+    font-size: 16px
 }
 
 .ebarkSection .main_btn.btn_orange {
@@ -883,7 +901,7 @@ img.box-image {
 }
 
 .product-logo img {
-    height: 55px !important;
+    height: 88px !important;
 }
 
 .howToGap {
@@ -895,14 +913,18 @@ img.box-image {
 }
 
 #owl-carousel2 .item:hover .product-detail,
-#innerBookCarousel .item:hover .product-detail,
-.productCarousel .item_s4:hover .hover-detail {
+#innerBookCarousel .item:hover .product-detail {
     opacity: 0.6;
     box-shadow: 0px 2px 10px #0000000d;
 }
 
 .productCarousel .item_s4 {
     cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.productCarousel .item_s4:hover {
+    transform: scale(1.2, 1.2);
 }
 
 .product-detail p {
@@ -1441,6 +1463,7 @@ ul.footer-social>li {
 #contacts-webchat-footer #contacts-webchat-tabs>div {
     display: block;
     width: 100%;
+    border-left: none;
 }
 
 div[id*='contacts-webchat-'].onready #contacts-webchat-tabs .chat,
@@ -1538,9 +1561,10 @@ div[id*='contacts-webchat-'] .text {
     transform: rotate(-90deg);
     position: fixed;
     z-index: 999999;
-    right: 50px;
-    bottom: 0;
+    right: 17px;
+    bottom: 27px;
     background-size: 15px;
+    cursor: pointer;
 }
 
 /* product carousel */
@@ -1563,7 +1587,7 @@ div[id*='contacts-webchat-'] .text {
     min-height: 131px;
     max-height: 131px;
     cursor: pointer;
-    gap: 20px;
+    gap: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1593,7 +1617,7 @@ div[id*='contacts-webchat-'] .text {
 
 /*about */
 .cover-container {
-    background-image: url('../img/bg2.jpg') !important;
+    /* background-image: url('../img/bg2.jpg') !important; */
     padding: 154px 0px !important
 }
 
@@ -1805,11 +1829,8 @@ div[id*='contacts-webchat-'] .text {
 
 .EngagementActive:hover,
 .EngagementActive.activeEng {
-    will-change: transform;
-    transform: translate3d(-1.1626px, -14.314px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-    box-shadow: 1px 1px 70px 18px rgb(0 0 0 / 23%);
-
+    box-shadow: 0.00px 4.00px 4px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 0;
 }
 
 .engagementSection h3 {
@@ -1929,7 +1950,7 @@ div[id*='contacts-webchat-'] .text {
     background-size: cover !important;
     height: 550px;
     /* margin-top: 85px; */
-    margin-top: 47px;
+    margin-top: 37px;
 }
 
 
@@ -2052,6 +2073,7 @@ div[id*='contacts-webchat-'] .text {
     display: flex;
     max-width: 244px;
     min-width: 244px;
+    transition: all 0.4s ease-in-out 0s;
 }
 
 .updatedSectionPromotion .sec_3 .EngagementActive p {
@@ -2062,7 +2084,7 @@ div[id*='contacts-webchat-'] .text {
 
 /* updated section promotion */
 .insidecontainermiddlepage p {
-
+    font-size: 16px;
     line-height: 30px;
 }
 
