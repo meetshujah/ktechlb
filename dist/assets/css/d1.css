@@ -127,6 +127,13 @@
     box-shadow: 0 8px 30px rgb(14 21 47 / 60%);
 }
 
+.img-container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .activeCard a {
     transform: translate(-50%, -50%) !important;
     top: 50% !important;
