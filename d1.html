@@ -158,7 +158,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-12">
             <div class="greyLeft">
-              <div class="img-container w-100" data-aos-easing="linear" data-aos="fade-left" data-aos-duration="1500">
+              <div class="img-container w-100">
                 <img src="./dist/assets/img/g3.png" class="img-fluid">
               </div>
             </div>
@@ -239,7 +239,7 @@
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-12">
             <div class="greyLeft">
-              <div class="img-container w-100" data-aos-easing="linear" data-aos="fade-left" data-aos-duration="1500">
+              <div class="img-container w-100">
                 <img src="./dist/assets/img/g3.png" class="img-fluid">
               </div>
             </div>
@@ -255,7 +255,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-12">
             <div class="greyLeft">
-              <div class="img-container w-100" data-aos-easing="linear" data-aos="fade-left" data-aos-duration="1500">
+              <div class="img-container w-100">
                 <img src="./dist/assets/img/g3.png" class="img-fluid">
               </div>
             </div>
@@ -413,7 +413,7 @@
     </section>
   </div>
   <div class="d1scrollEffect">
-    <div class="d1LastSection">
+    <div class="d1LastSection m2CommunicatorOne">
 
 
       <div class="d1Item">
@@ -849,6 +849,31 @@
         $('.' + getAttr).show();
       })
       new WOW().init();
+
+      var $card = $(".m2CommunicatorOne");
+      var $container = $(".m2CommunicatorOne");
+      var $bike = $(".m2CommunicatorOne img");
+
+      //Moving Animation Event
+      $container.on("mousemove", function (e) {
+        let xAxis = (window.innerWidth / 2 - e.clientX) / 30;
+        let yAxis = (window.innerHeight / 2 - e.clientY) / 30;
+        $bike.css("transform", `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`);
+      });
+
+      //Animate on Hover
+      $container.hover(function () {
+        $card.toggleClass("has-transform");
+        $bike.toggleClass("has-transform");
+      });
+
+      //Pop Back on mouseleave
+      $container.on("mouseleave", function () {
+        $card.css("transform", `rotateY(0deg) rotateX(0deg)`);
+      });
+
+      //last sectioion
+
     });
   </script>
 </body>
