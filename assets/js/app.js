@@ -47,6 +47,30 @@
   });
   /* p1 card */
 
+  /* p2 card */
+  var $cardP2 = $(".p2Card .c-card_b");
+  var $containerP2 = $(".p2Card");
+  var $bikeP2 = $(".p2Card img");
+
+  //Moving Animation Event
+  $containerP2.on("mousemove", function (e) {
+    let xAxisP2 = (window.innerWidth / 2 - e.clientX) / 30;
+    let yAxisP2 = (window.innerHeight / 2 - e.clientY) / 30;
+    $card.css("transform", `rotateY(${xAxisP2}deg) rotateX(${yAxisP2}deg)`);
+  });
+
+  //Animate on Hover
+  $containerP2.hover(function () {
+    $cardP2.toggleClass("has-transform");
+    $bikeP2.toggleClass("has-transform");
+  });
+
+  //Pop Back on mouseleave
+  $containerP2.on("mouseleave", function () {
+    $cardP2.css("transform", `rotateY(0deg) rotateX(0deg)`);
+  });
+  /* p2 card */
+
 
   function theKingIsBlackPageCallback(n) {
     return {
