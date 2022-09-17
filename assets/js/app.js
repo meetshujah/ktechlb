@@ -124,3 +124,36 @@ if($('#flipBookPDF').lenght>0){
 }
   $('.demo-msg').css('display','none !important');
 });
+WOW.prototype.addBox = function(element) {
+  this.boxes.push(element);
+};
+wow = new WOW();
+wow.init();
+
+var checkWOWJsReset = function() {    
+  var resetWOWJsAnimation = function() {
+    var $that = $(this);
+
+    // determine if container is in viewport
+    // you might pass an offset in pixel - a negative offset will trigger loading earlier, a postive value later
+    // credits @ https://stackoverflow.com/a/33979503/2379196
+    var isInViewport = function($container, offset) {
+      var containerTop = $container.offset().top;
+      var containerBottom = containerTop + $container.outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return containerBottom > viewportTop && containerTop + offset < viewportBottom;
+    };
+
+    // only reset animation when no long in viewport and already animated (but not running)
+    // you might want to use a different offset for isInViewport()
+    if (!isInViewport($that, 0) && $that.css('animation-name') != 'none' && !$that.hasClass('animated')) {
+      $that.css({'visibility': 'hidden', 'animation-name': 'none'}); // reset animation
+      wow.addBox(this);
+    }
+  };
+  $('.wow').each(resetWOWJsAnimation); // check if reset is necessary for any element
+};
+$(window).on('resize scroll', checkWOWJsReset);
