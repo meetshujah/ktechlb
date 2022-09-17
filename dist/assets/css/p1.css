@@ -389,15 +389,19 @@ img.full-img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
     justify-content: center;
-
 }
 
 .widgetsLinks {
     background: #fff;
     padding-top: 100px;
     padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh !important;
 }
 
 .widgetsLinks .card {
@@ -412,7 +416,7 @@ img.full-img {
     overflow: hidden;
     position: relative;
     text-decoration: none;
-    width: 342px;
+    width: 227px;
     background-image: url('../img/p1/emark_family-500x430-c.jpg');
 }
 
@@ -486,7 +490,7 @@ img.full-img {
     left: 50%;
     opacity: 0;
     position: absolute;
-    font-size: 16px;
+    font-size: 15px;
     top: 0%;
     transform: translate(-50%, 9.375rem);
     transition: .6s;
@@ -550,9 +554,7 @@ img.full-img {
     height: 200px;
 }
 
-.desktop {
-    overflow: hidden;
-}
+
 
 .p2-bannerMargin {
     margin-left: 97px !important;
