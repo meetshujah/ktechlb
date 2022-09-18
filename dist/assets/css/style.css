@@ -2342,6 +2342,14 @@ div[id*='contacts-webchat-'] .text {
     background-color: rgba(0, 0, 0, 0.329);
     bottom: 0;
     padding: 30px;
+    padding-right: 70px;
+}
+
+.body-text.bodyTextCenter {
+    width: 60% !important;
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.4;
 }
 
 .m2BannerText .container {
