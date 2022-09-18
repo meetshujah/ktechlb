@@ -11,6 +11,13 @@
     width: 200px;
 }
 
+.d1Table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .d-heading.h3__section-title {
     font-size: 40px;
     font-weight: bolder;
@@ -90,6 +97,7 @@
 
 .d1generalDetailSection .card:last-child {
     border-right: 1px solid #fff !important;
+    border-left: none;
 }
 
 .d1generalDetailSection div div:nth-child(2) .card {
@@ -108,10 +116,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 85px;
+    gap: 37px;
     padding: 70px;
     flex-wrap: wrap;
     overflow: hidden;
+    padding-top: 200px;
 }
 
 .d1LastSection .d1-card-image {
