@@ -546,13 +546,13 @@ img.full-img {
     position: absolute;
     display: inline-block;
     cursor: pointer;
-    right: 0;
+    left: 60%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.c-cardP2 .image-19 {
-    height: 200px;
+.c-cardP2 .w-450 {
+    height: 450px;
 }
 
 
