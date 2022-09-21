@@ -116,16 +116,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 37px;
+    gap: 51px;
     padding: 70px;
     flex-wrap: wrap;
     overflow: hidden;
-    padding-top: 200px;
 }
 
 .d1LastSection .d1-card-image {
-    height: 250px;
-    width: 300px;
+    height: 314px;
+    width: 417px;
     max-height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -134,6 +133,61 @@
     display: block;
     transition: all 0.2s ease-out;
     box-shadow: 0 8px 30px rgb(14 21 47 / 60%);
+}
+
+.d1Item {
+    width: 417px;
+}
+
+.tech-accordion {
+
+    width: 45%;
+    margin: 0 auto;
+
+}
+
+.tech-accordion a[data-toggle="collapse"] {
+    background: #242424;
+    border: 1px solid #fff;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-size-17 {
+    font-size: 17px !important
+}
+
+.tech-accordion a[data-toggle="collapse"][aria-expanded="true"] .tech-icon.fa-plus:before {
+    content: "\f068" !important;
+}
+
+.tech-accordion a[data-toggle="collapse"]:hover {
+    text-decoration: none;
+}
+
+.tech-text {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.tech-icon {
+    margin-left: auto;
+    display: flex;
+}
+
+.tech-accordion .card {
+
+    border: 1px solid #fff;
+    border-top: none;
+    border-radius: 0;
+    color: #fff;
+    box-shadow: 0 8px 30px rgb(14 21 47 / 60%);
+    background: #242424;
 }
 
 .img-container-flex {
