@@ -931,9 +931,13 @@
         vid.pause();
         $('.video-preview-wrapper,.play-toggle').show();
       });
-      var emarkLogo = $('.emark-logo').length;
-      var secureLogo = $('.secure-logo').length;
-      if ($(emarkLogo == 1) && $(secureLogo == 1)) {
+      var emarkLogo = $('.emark-logo');
+      var secureLogo = $('.secure-logo');
+      var checkVar = {
+        e: emarkLogo,
+        z: secureLogo
+      }
+      if (checkVar.e.length === 1 || checkVar.z.length === 1) {
         $('.center-logo').css('width', '150px');
       }
       else {
