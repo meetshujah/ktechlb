@@ -283,9 +283,9 @@
         <div class="row">
           <div class="col mb-5" data-aos-easing="linear" data-aos="fade-up" data-aos-duration="2000">
             <div class="emark-text">
-              <div class="text">e-mark</div>
-              <img src="dist/assets/img/ebark.jpg" alt="ebark" style="width: 150px;">
-              <div class="text">secure</div>
+              <div class="text emark-logo">e-mark</div>
+              <img src="dist/assets/img/ebark.jpg" alt="ebark" style="width: 150px;" class="center-logo">
+              <div class="text secure-logo">secure</div>
             </div>
           </div>
         </div>
@@ -931,6 +931,14 @@
         vid.pause();
         $('.video-preview-wrapper,.play-toggle').show();
       });
+      var emarkLogo = $('.emark-logo').length;
+      var secureLogo = $('.secure-logo').length;
+      if ($(emarkLogo == 1) && $(secureLogo == 1)) {
+        $('.center-logo').css('width', '150px');
+      }
+      else {
+        $('.center-logo').css('width', '240px');
+      }
     });
   </script>
 </body>
