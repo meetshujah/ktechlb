@@ -131,7 +131,30 @@ h6 {
     font-size: 1.857rem;
 }
 
+.updatedSectionPromotion .sec_3 .EngagementActive p::-webkit-scrollbar {
+    font-size: 16px;
+    max-height: 150px;
+    overflow-y: auto;
+}
 
+/* Track */
+.updatedSectionPromotion .sec_3 .EngagementActive p::-webkit-scrollbar {
+    width: 10px;
+}
+
+.updatedSectionPromotion .sec_3 .EngagementActive p::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.updatedSectionPromotion .sec_3 .EngagementActive p::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.updatedSectionPromotion .sec_3 .EngagementActive p::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 /* utilties */
 .f-s-2 {
@@ -922,6 +945,10 @@ img.box-image {
 #innerBookCarousel .item:hover .product-detail {
     opacity: 0.6;
     box-shadow: 0px 2px 10px #0000000d;
+}
+
+#owl-carousel2 .owl-stage {
+    margin: 0 auto;
 }
 
 .productCarousel .item_s4 {
