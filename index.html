@@ -215,7 +215,21 @@
   <section class="productSection">
 
     <div id="owl-carousel2" class="owl-carousel">
+      <div class="item">
+        <div class="item_s4"> <img src="dist/assets/img/p11.jpg" alt="">
+          <div class="product-detail overlay"></div>
+          <div class="product-logo"><img src="dist/assets/img/logo1.png" alt=""></div>
+        </div>
+      </div>
 
+      <div class="item">
+        <div class="item_s4"> <img src="dist/assets/img/p14.jpg" alt="">
+          <div class="product-detail overlay">
+
+          </div>
+          <div class="product-logo"><img src="dist/assets/img/logo4.png" alt=""></div>
+        </div>
+      </div>
       <div class="item">
         <div class="item_s4"> <img src="dist/assets/img/p11.jpg" alt="">
           <div class="product-detail overlay"></div>
@@ -240,29 +254,23 @@
         </div>
       </div>
       <div class="item">
-        <div class="item_s4"> <img src="dist/assets/img/p12.jpg" alt="">
+        <div class="item_s4"> <img src="dist/assets/img/p11.jpg" alt="">
           <div class="product-detail overlay">
 
           </div>
-          <div class="product-logo"><img src="dist/assets/img/logo2.png" alt=""></div>
+          <div class="product-logo"><img src="dist/assets/img/logo1.png" alt=""></div>
         </div>
       </div>
+
       <div class="item">
-        <div class="item_s4"> <img src="dist/assets/img/p13.jpg" alt="">
+        <div class="item_s4"> <img src="dist/assets/img/p11.jpg" alt="">
           <div class="product-detail overlay">
 
           </div>
-          <div class="product-logo"><img src="dist/assets/img/logo3.png" alt=""></div>
+          <div class="product-logo"><img src="dist/assets/img/logo1.png" alt=""></div>
         </div>
       </div>
-      <div class="item">
-        <div class="item_s4"> <img src="dist/assets/img/p14.jpg" alt="">
-          <div class="product-detail overlay">
 
-          </div>
-          <div class="product-logo"><img src="dist/assets/img/logo4.png" alt=""></div>
-        </div>
-      </div>
     </div>
 
 
@@ -883,18 +891,15 @@
       });
 
       $('#owl-carousel2').owlCarousel({
+        items: 4,
         loop: false,
+        margin: 0,
         autoplay: false,
-
         autoplayTimeout: 5000,
         autoplayHoverPause: false,
-        margin: 0,
-        items: 4,
         nav: true,
         navText: ['<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>', '<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>'],
         dots: false,
-        center: false,
-
         responsive: {
           0: {
             items: 1
