@@ -240,10 +240,7 @@ nav .dropdown>.dropdown-toggle:active {
 
 
 
-.navbar-dark .navbar-brand img {
-    width: 110px;
-    margin-bottom: 0;
-}
+
 
 .navbar-dark .navbar-brand {
     padding-top: 0;
@@ -253,6 +250,7 @@ nav .dropdown>.dropdown-toggle:active {
 .navbar-dark .navbar-brand img {
     width: 110px;
     margin-bottom: 0;
+    height: 34px;
 }
 
 .navbar {
